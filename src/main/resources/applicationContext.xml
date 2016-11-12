@@ -244,14 +244,6 @@
     p:username="root"
     p:password="root"
     ></bean>
-    <!--<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init"-->
-          <!--destroy-method="close"-->
-          <!--p:driverClassName="com.mysql.jdbc.Driver"-->
-          <!--p:url="jdbc:mysql://127.5.109.130:3306/ssm?useUnicode=true&amp;characterEncoding=UTF-8"-->
-          <!--p:username="adminb3Uvr5C"-->
-          <!--p:password="umalZLCdUb-h"-->
-    <!--&gt;</bean>-->
-
     <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate" p:dataSource-ref="dataSource"></bean>
 
     <context:component-scan base-package="com.xscj.dao"></context:component-scan>
