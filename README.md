@@ -2,7 +2,7 @@
 访问地址：[http://liuyanlin-leorain.rhcloud.com/](http://liuyanlin-leorain.rhcloud.com/)
 作者：聚散流沙
 QQ：1573623031
-
+微信号：leorain201314
 管理员端：
 体验账号：用户名：校长 密码：0
 ![学生信息添加、学生信息编辑、学生信息查询、班级信息查询](http://git.oschina.net/uploads/images/2016/1112/202208_46de5999_381412.png "学生管理")
@@ -37,6 +37,3 @@ QQ：1573623031
 体验账号：用户名：1 密码：0
 ![学员端成绩查询页面](http://git.oschina.net/uploads/images/2016/1112/204058_41401388_381412.png "学员端成绩查询页面")
 
-
-![各位看官，如果觉得不错，想要提供技术服务的，定制开发的，请打赏，毕竟部署在云服务器成本在那](http://git.oschina.net/uploads/images/2016/1112/205840_29d485f0_381412.jpeg "支付宝打赏二维码")
-![各位看官，如果觉得不错，想要提供技术服务的，定制开发的，请打赏，毕竟部署在云服务器成本在那](http://git.oschina.net/uploads/images/2016/1112/210621_868eee06_381412.png "微信打赏二维码")
