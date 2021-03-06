@@ -2,7 +2,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-    <title>洛天工作室</title>
+    <title>XXX工作室</title>
     <link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
           rel="stylesheet">
     <script src="js/jquery-1.10.2.js"></script>
@@ -31,7 +31,7 @@
 <div id="accordion">
     <h3>集美中学学生成绩管理系统欢迎您的使用</h3>
     <div align="left" id="info">
-        <p><strong>公司：</strong>洛天工作室</p>
+        <p><strong>公司：</strong>XXX工作室</p>
         <p><strong>作者：</strong>谢中贵</p>
         <p><strong>联系电话：</strong>18365073582</p>
         <p><strong>QQ：</strong>1573623031</p>

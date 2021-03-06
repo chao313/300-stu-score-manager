@@ -175,7 +175,7 @@ public class ScorePrinterGradeSucAction extends ActionSupport {
         Chunk logo = new Chunk(Image.getInstance(Util.LOGO_FILE_PATH + "logo.png"), 0, -15);
 
         logoText.add(logo);
-        logoText.add("洛天工作室");
+        logoText.add("XXX工作室");
         document.add(logoText);
 
         Paragraph p = new Paragraph(grade.getYear() + "届（" + grade.getClassID()

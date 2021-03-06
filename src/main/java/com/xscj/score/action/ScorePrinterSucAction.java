@@ -82,7 +82,7 @@ public class ScorePrinterSucAction extends ActionSupport {
         //Chunk logo = new Chunk(Image.getInstance(ServletActionContext.getServletContext().getRealPath("/")+"logo.png"),0,-15);
         Chunk logo = new Chunk(Image.getInstance(Util.LOGO_FILE_PATH+ "logo.png"), 0, -15);
         logoText.add(logo);
-        logoText.add("洛天工作室");
+        logoText.add("XXX工作室");
         document.add(logoText);
         Paragraph p = new Paragraph("集美中学" + this.grade.getYear() + "届(" + this.grade.getClassID() + ")班" + this.subStudent.getStuName() + "同学成绩单", FontChinese);
         p.setAlignment(Element.ALIGN_CENTER);

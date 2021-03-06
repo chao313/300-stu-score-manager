@@ -4,7 +4,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>洛天工作室</title>
+    <title>XXX工作室</title>
     <link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
           rel="stylesheet">
     <script src="js/jquery-1.10.2.js"></script>
