@@ -4,7 +4,7 @@
 <html>
 <head>
     <title>XXX工作室</title>
-    <link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
+    <link href="css/bootstrap.min.css" rel="stylesheet"><link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
           rel="stylesheet">
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/jquery-ui-1.10.4.custom.js"></script>
@@ -115,7 +115,7 @@
                 type="button" name="searchBtn" value="查询"/>
         </form>
         <hr>
-        <table cellspacing="0" cellpadding="8" class="datalist">
+        <table cellspacing="0" cellpadding="8" class="datalist table">
             <tr>
                 <th>教师编号</th>
                 <th>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</th>

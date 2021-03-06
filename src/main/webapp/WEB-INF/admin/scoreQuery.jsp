@@ -4,7 +4,7 @@
 <html>
 <head>
     <title>XXX工作室</title>
-    <link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
+    <link href="css/bootstrap.min.css" rel="stylesheet"><link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
           rel="stylesheet">
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/jquery-ui-1.10.4.custom.js"></script>
@@ -238,7 +238,7 @@
     <h3>成绩管理——成绩查询和分析</h3>
     <div align="left" class="frame">
         <form action="scoreQueryResult.action" method="post" id="myForm1">
-            <table class="datalist">
+            <table class="datalist table">
                 <tr>
                     <td>学号：<input id="sxh1" type="text" name="stuXueHao"/>&nbsp;&nbsp;&nbsp;<input type="button"
                                                                                                    name="btn1"
@@ -247,7 +247,7 @@
             </table>
         </form>
         <form action="scoreQueryResultSecond.action" method="post" id="myForm2">
-            <table class="datalist">
+            <table class="datalist table">
                 <tr>
                     <td>学号：<input type="text" name="stuXueHao" id="sxh2"/>&nbsp;&nbsp;&nbsp;课程：<select name="courseID"
                                                                                                        id="courseID2">
@@ -259,7 +259,7 @@
             </table>
         </form>
         <form action="scoreQueryResultFour.action" method="post" id="myForm3">
-            <table class="datalist">
+            <table class="datalist table">
                 <tr>
                     <td>学号：<input type="text" name="stuXueHao" id="sxh3"/>&nbsp;&nbsp;&nbsp;类型：<select name="examType"
                                                                                                        id="examType3">
@@ -278,7 +278,7 @@
             </table>
         </form>
         <form action="scoreQueryResultThird.action" method="post" id="myForm4">
-            <table class="datalist">
+            <table class="datalist table">
                 <tr>
                     <td>班级：<select name="gradeID" id="gradeID4">
                         <s:iterator value="grades">
@@ -296,7 +296,7 @@
             </table>
         </form>
         <form action="scoreQueryResultFive.action" method="post" id="myForm5">
-            <table class="datalist">
+            <table class="datalist table">
                 <tr>
                     <td>班级：<select name="gradeID" id="gradeID5">
                         <s:iterator value="grades">

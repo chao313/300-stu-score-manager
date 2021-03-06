@@ -4,7 +4,7 @@
 <html>
 <head>
     <title>XXX工作室</title>
-    <link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
+    <link href="css/bootstrap.min.css" rel="stylesheet"><link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
           rel="stylesheet">
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/jquery-ui-1.10.4.custom.js"></script>
@@ -73,7 +73,7 @@
                 value="subStudent.stuName"/>同学第<s:property value="xueqi"/>学期<s:property value="examType"/>考试<s:property
                 value="course.name"/>科目成绩<span>修改成功</span></strong>
         <hr>
-        <table class="datalist">
+        <table class="datalist table">
             <tr>
                 <th>学生学号：</th>
                 <td><span><s:property value="stuXueHao"/></span></td>

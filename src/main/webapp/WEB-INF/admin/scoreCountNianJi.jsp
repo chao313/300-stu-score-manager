@@ -6,7 +6,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>XXX工作室</title>
-    <link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
+    <link href="css/bootstrap.min.css" rel="stylesheet"><link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
           rel="stylesheet">
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/jquery-ui-1.10.4.custom.js"></script>
@@ -81,7 +81,7 @@
             班主任姓名：<span style="color:red"><s:property value="key.adviserName"/></span>
             <br/>
             <br/>
-            <table class="datalist">
+            <table class="datalist table">
                 <tr>
                     <th>课程编号</th>
                     <th>课程名称</th>

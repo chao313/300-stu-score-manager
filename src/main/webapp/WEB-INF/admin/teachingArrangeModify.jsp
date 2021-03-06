@@ -5,7 +5,7 @@
 <html>
 <head>
     <title>XXX工作室</title>
-    <link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
+    <link href="css/bootstrap.min.css" rel="stylesheet"><link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
           rel="stylesheet">
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/jquery-ui-1.10.4.custom.js"></script>
@@ -76,7 +76,7 @@
         <form action="teachingArrangeModifySuc.action" method="post">
             <input type="hidden" name="gradeChose" value='<s:property value="gradeChose" />'/>
             <input type="hidden" name="xueqiChose" value='<s:property value="xueqiChose" />'/>
-            <table class="datalist">
+            <table class="datalist table">
                 <tr>
                     <th>课程编号</th>
                     <th>课程名称</th>

@@ -5,7 +5,7 @@
 <html>
 <head>
     <title>XXX工作室</title>
-    <link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
+    <link href="css/bootstrap.min.css" rel="stylesheet"><link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
           rel="stylesheet">
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/jquery-ui-1.10.4.custom.js"></script>
@@ -117,7 +117,7 @@
             </div>
         </s:if>
         <s:set name="teachingArrangeFlag" value="false" scope="session"></s:set>
-        <table class="datalist">
+        <table class="datalist table">
             <tr>
                 <th align="center"><strong>有效班级</strong></th>
                 <th align="center"><strong>学期、操作</strong></th>

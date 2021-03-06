@@ -3,7 +3,7 @@
 <html>
 <head>
     <title>XXX工作室</title>
-    <link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
+    <link href="css/bootstrap.min.css" rel="stylesheet"><link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
           rel="stylesheet">
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/jquery-ui-1.10.4.custom.js"></script>
@@ -29,7 +29,7 @@
 <body>
 <jsp:include page="stuServiceNavigation.jsp"></jsp:include>
 <div id="accordion">
-    <h3>集美中学学生成绩管理系统欢迎您的使用</h3>
+    <h3>XX中学学生成绩管理系统欢迎您的使用</h3>
     <div align="left" id="info">
         <p><strong>公司：</strong>XXX工作室</p>
         <p><strong>作者：</strong>谢中贵</p>

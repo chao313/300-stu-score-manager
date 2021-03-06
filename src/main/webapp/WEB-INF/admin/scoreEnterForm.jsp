@@ -4,7 +4,7 @@
 <html>
 <head>
     <title>XXX工作室</title>
-    <link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
+    <link href="css/bootstrap.min.css" rel="stylesheet"><link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
           rel="stylesheet">
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/jquery-ui-1.10.4.custom.js"></script>
@@ -108,7 +108,7 @@
             <input type="hidden" name="courseID" value='<s:property value="course.bianHao" />'/>
             <input type="hidden" name="xueqi" value='<s:property value="xueqi" />'/>
             <input type="hidden" name="examType" value='<s:property value="examType" />'>
-            <table class="datalist">
+            <table class="datalist table">
                 <tr>
                     <th colspan="3" align="left"> 考试时间 ：<input type="text" name="examTime"
                                                                value='<s:property value="currentDate" />'/></th>

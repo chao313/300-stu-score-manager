@@ -5,7 +5,7 @@
 <head>
     <title>XXX工作室</title>
 
-    <link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
+    <link href="css/bootstrap.min.css" rel="stylesheet"><link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
           rel="stylesheet">
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/jquery-ui-1.10.4.custom.js"></script>
@@ -75,7 +75,7 @@
     <h3>学生管理&nbsp;&gt;&nbsp;学生基本信息修改成功</h3>
     <div align="center">
 
-        <table class="datalist">
+        <table class="datalist table">
             <tr>
                 <th width="80" align="right" class="labelString"><strong>学生姓名</strong></th>
                 <td width="350"><s:property value="student.name"/></td>

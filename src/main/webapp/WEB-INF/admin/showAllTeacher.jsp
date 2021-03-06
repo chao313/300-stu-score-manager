@@ -4,7 +4,7 @@
 <html>
 <head>
     <title>XXX工作室</title>
-    <link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
+    <link href="css/bootstrap.min.css" rel="stylesheet"><link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
           rel="stylesheet">
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/jquery-ui-1.10.4.custom.js"></script>
@@ -86,7 +86,7 @@
             <div style="color:red">该教师目前仍然还是班级的管理者，系统拒绝您的删除请求</div>
         </s:if>
         <s:set name="teacherAdviserDelErrorFlag" value="false" scope="session"></s:set>
-        <table cellspacing="0" cellpadding="8" class="datalist">
+        <table cellspacing="0" cellpadding="8" class="datalist table">
             <tr>
                 <th>教师编号</th>
                 <th>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</th>

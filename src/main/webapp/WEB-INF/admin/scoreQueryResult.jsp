@@ -4,7 +4,7 @@
 <html>
 <head>
     <title>XXX工作室</title>
-    <link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
+    <link href="css/bootstrap.min.css" rel="stylesheet"><link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
           rel="stylesheet">
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/jquery-ui-1.10.4.custom.js"></script>
@@ -72,7 +72,7 @@
                  src='scoreAnalyze.action?stuXueHao=<s:property value="stuXueHao" />&stuName=<s:property value="student.stuName" />&year=<s:property value="grade.year" />&classID=<s:property value="grade.classID"/>'
                  width="1000" height="500"/>
             <hr>
-            <table class="datalist">
+            <table class="datalist table">
                 <tr>
                     <th colspan="6"><s:property value="grade.year"/>届（<s:property value="grade.classID"/>）班&nbsp;&nbsp;&nbsp;&nbsp;学号：<s:property
                             value="stuXueHao"/>&nbsp;&nbsp;&nbsp;&nbsp;姓名：<s:property value="student.stuName"/></th>

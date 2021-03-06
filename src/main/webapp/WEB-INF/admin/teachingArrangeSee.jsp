@@ -5,7 +5,7 @@
 <html>
 <head>
     <title>XXX工作室</title>
-    <link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
+    <link href="css/bootstrap.min.css" rel="stylesheet"><link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
           rel="stylesheet">
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/jquery-ui-1.10.4.custom.js"></script>
@@ -73,7 +73,7 @@
 <div id="accordion">
     <h3><s:property value="grade.year"/>届（<s:property value="grade.classID"/>）班级第<s:property value="xueqiChose"/>学期授课安排情况</h3>
     <div class="frame">
-        <table class="datalist">
+        <table class="datalist table">
             <tr>
                 <th>课程编号</th>
                 <th>课程名称</th>

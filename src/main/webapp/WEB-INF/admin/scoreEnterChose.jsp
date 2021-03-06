@@ -4,7 +4,7 @@
 <html>
 <head>
     <title>XXX工作室</title>
-    <link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
+    <link href="css/bootstrap.min.css" rel="stylesheet"><link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
           rel="stylesheet">
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/jquery-ui-1.10.4.custom.js"></script>
@@ -154,7 +154,7 @@
     <h3>成绩管理——成绩录入</h3>
     <div align="left" class="frame">
         <form action="scoreEnterSimpleStu.action" method="post" id="stuForm">
-            <table class="datalist">
+            <table class="datalist table">
                 <tr>
                     <td>学生学号：<input type="text" name="stuXueHao"/>&nbsp;&nbsp;&nbsp;选择学期：<select name="xueqi"
                                                                                                  id="xueqi1">
@@ -174,7 +174,7 @@
 
         <form action="scoreEnterForm.action" method="post" id="myForm">
             <input type="hidden" name="flag" id="flag"/>
-            <table class="datalist">
+            <table class="datalist table">
                 <tr>
                     <td>选择班级：<select name="gradeID">
                         <s:iterator value="grades">

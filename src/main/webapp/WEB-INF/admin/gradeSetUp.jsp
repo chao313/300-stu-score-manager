@@ -4,7 +4,7 @@
 <html>
 <head>
     <title>XXX工作室</title>
-    <link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
+    <link href="css/bootstrap.min.css" rel="stylesheet"><link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
           rel="stylesheet">
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/jquery-ui-1.10.4.custom.js"></script>
@@ -202,7 +202,7 @@
         目前存在如下班级:
         <br><br>
 
-        <table class="datalist">
+        <table class="datalist table">
             <s:iterator value="validGrades" status="st">
                 <s:if test="#st.index % 8 == 0">
                     <tr>
@@ -229,7 +229,7 @@
         <hr>
         <div>
             <form id="form1" name="form1" method="post" action="gradeSetUpRegister.action">
-                <table class="datalist">
+                <table class="datalist table">
                     <tr>
                         <th align="right"><strong>班级编号</strong></th>
                         <td><input type="text"

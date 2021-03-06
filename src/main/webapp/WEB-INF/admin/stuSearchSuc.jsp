@@ -1,9 +1,10 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8" %>
+<%@ page language="java" pageEncoding="UTF-8" %>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
     <title>XXX工作室</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
           rel="stylesheet">
     <script src="js/jquery-1.10.2.js"></script>
@@ -13,19 +14,20 @@
             var $searchBtn = $("input[name=searchBtn]");
             $searchBtn.bind("click", function () {
                 $.ajax(
-                        {
-                            type: "get",
-                            url: "stuSearchTest.action",
-                            data: {
-                                stuXueHao: $("input[name=stuXueHao]").val()
-                            },
-                            dataType: "json",
-                            success: login_Result,
-                            error: function () {
-                                alert("系统异常，请稍后重试！");
-                            }
+                    {
+                        type: "get",
+                        url: "stuSearchTest.action",
+                        data: {
+                            stuXueHao: $("input[name=stuXueHao]").val()
+                        },
+                        dataType: "json",
+                        success: login_Result,
+                        error: function () {
+                            alert("系统异常，请稍后重试！");
                         }
+                    }
                 );
+
                 function login_Result(data) {
                     var d = eval("(" + data + ")");
                     if (d.flag == 0) {
@@ -118,7 +120,7 @@
                 type="button" name="searchBtn" value="查询"/>
         </form>
         <hr>
-        <table cellspacing="0" cellpadding="8" class="datalist">
+        <table cellspacing="0" cellpadding="8" class="datalist table">
             <tr>
                 <th>学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号</th>
                 <th>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</th>

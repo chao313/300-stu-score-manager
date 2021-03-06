@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8" %>
+<%@ page language="java" pageEncoding="UTF-8" %>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <head>
     <Style>
@@ -54,32 +54,32 @@
                             }
                             else {
                                 $.ajax(
-                                        {
-                                            type: "post",
-                                            url: "passModify.action",
-                                            dataType: "json",
-                                            data: {
-                                                xuehao: $("input[name=xuehao]").val(),
-                                                oldPass: $("input[name=oldPass]").val(),
-                                                newPass: $("input[name=newPass]").val(),
-                                                rePass: $("input[name=rePass]").val()
-                                            },
-                                            success: function (data) {
-                                                var d = eval("(" + data + ")");
-                                                if (d.flag) {
-                                                    alert("密码修改成功,将会跳转到登录页面请用新密码重新登录");
-                                                    window.location.href = "index.jsp";
-                                                }
-                                                else {
-                                                    $(".ErrorStyle").empty();
-                                                    $("#oldPassError").text("旧密码输入错误");
-                                                }
-
-                                            },
-                                            error: function () {
-                                                alert("系统异常，请稍后重试！");
+                                    {
+                                        type: "post",
+                                        url: "passModify.action",
+                                        dataType: "json",
+                                        data: {
+                                            xuehao: $("input[name=xuehao]").val(),
+                                            oldPass: $("input[name=oldPass]").val(),
+                                            newPass: $("input[name=newPass]").val(),
+                                            rePass: $("input[name=rePass]").val()
+                                        },
+                                        success: function (data) {
+                                            var d = eval("(" + data + ")");
+                                            if (d.flag) {
+                                                alert("密码修改成功,将会跳转到登录页面请用新密码重新登录");
+                                                window.location.href = "index.jsp";
                                             }
+                                            else {
+                                                $(".ErrorStyle").empty();
+                                                $("#oldPassError").text("旧密码输入错误");
+                                            }
+
+                                        },
+                                        error: function () {
+                                            alert("系统异常，请稍后重试！");
                                         }
+                                    }
                                 );
                             }
                         }
@@ -104,13 +104,18 @@
 </head>
 <s:if test="#session['userName'] != null">
     <div class="topInfo">
-        <p><a href="#" id="dialog-link" class="ui-state-default ui-corner-all"><span
+        <p><a class="btn btn-default" href="#" id="dialog-link" class="ui-state-default ui-corner-all"><span
                 class="ui-icon ui-icon-newwin"></span>修改密码</a>
-            <a href="stuMain.action"><button id="btn">主界面</button></a>
-            <a href="exitSystem.action"><button id="exit">退出系统</button></a>
+            <a class="btn btn-default" href="stuMain.action">
+                <button id="btn">主界面</button>
+            </a>
+            <a class="btn btn-default" href="exitSystem.action">
+                <button id="exit">退出系统</button>
+            </a>
             登录用户名：<s:property value="#session['userName']"/>&nbsp;&nbsp;&nbsp;
             姓名：<s:property value="#session['userAliaName']"/>&nbsp;&nbsp;&nbsp;
-            用户身份：<s:property value="#session['userRole']"/> &nbsp;&nbsp;&nbsp;</p>
+            用户身份：<s:property value="#session['userRole']"/> &nbsp;&nbsp;&nbsp;
+        </p>
     </div>
 </s:if>
 <div id="dialog" title="密码修改" class="popInfo">

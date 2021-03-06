@@ -5,7 +5,7 @@
 <html>
 <head>
     <title>XXX工作室</title>
-    <link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
+    <link href="css/bootstrap.min.css" rel="stylesheet"><link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
           rel="stylesheet">
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/jquery-ui-1.10.4.custom.js"></script>
@@ -107,7 +107,7 @@
                 value="course.name"/>科目成绩删除界面</strong>
         <hr/>
         <form action="teacherScoreDelSuc.action" method="post" id="form1">
-            <table class="datalist">
+            <table class="datalist table">
                 <tr>
                     <th>学生学号</th>
                     <th>学生姓名</th>

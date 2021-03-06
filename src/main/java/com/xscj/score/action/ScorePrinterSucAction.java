@@ -84,7 +84,7 @@ public class ScorePrinterSucAction extends ActionSupport {
         logoText.add(logo);
         logoText.add("XXX工作室");
         document.add(logoText);
-        Paragraph p = new Paragraph("集美中学" + this.grade.getYear() + "届(" + this.grade.getClassID() + ")班" + this.subStudent.getStuName() + "同学成绩单", FontChinese);
+        Paragraph p = new Paragraph("XX中学" + this.grade.getYear() + "届(" + this.grade.getClassID() + ")班" + this.subStudent.getStuName() + "同学成绩单", FontChinese);
         p.setAlignment(Element.ALIGN_CENTER);
         document.add(p);
         Paragraph p2 = new Paragraph("第" + this.xueqi + "学期 " + this.examType + "考试", FontChinese);

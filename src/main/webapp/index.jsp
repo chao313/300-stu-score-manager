@@ -5,6 +5,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>XXX工作室</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
           rel="stylesheet">
     <script src="js/jquery-1.10.2.js"></script>
@@ -29,55 +30,57 @@
                     return;
                 }
                 $.ajax(
-                        {
-                            type: "post",
-                            url: "loginJudge.action",
-                            dataType: "json",
-                            data: {
-                                username: $("input[name=username]").val(),
-                                password: $("input[name=password]").val(),
-                                certCode: $("input[name=certCode]").val(),
-                                userRole: $("input[name=userRole]:checked").val()
-                            },
-                            success: function (data) {
-                                var d = eval("(" + data + ")");
-                                if (d.judge == "certCodeFail") {
-                                    $(".ErrorStyle").empty();
-                                    $("#certCodeError").text("验证码错误");
-                                    return;
-                                }
-                                if (d.stuFound) {
-                                    /* 	alert("找到了学生信息"); */
-                                    window.location.href = "stuMain.action";
-                                    return;
-                                }
-                                else if (d.teacherFound) {
-                                    /* alert("找到了教师信息"); */
-                                    window.location.href = "teacherMain.action";
-                                    return;
-                                }
-                                else if (d.administratorFound) {
-                                    window.location.href = "adminMain.action";
-                                }
-                                else {
-                                    alert("用户名或密码错误，系统拒绝了您的访问请求");
-                                    changeimg();
-                                    return;
-                                }
-
-                            },
-                            error: function () {
-                                alert("系统异常，请稍后重试！");
+                    {
+                        type: "post",
+                        url: "loginJudge.action",
+                        dataType: "json",
+                        data: {
+                            username: $("input[name=username]").val(),
+                            password: $("input[name=password]").val(),
+                            certCode: $("input[name=certCode]").val(),
+                            userRole: $("input[name=userRole]:checked").val()
+                        },
+                        success: function (data) {
+                            var d = eval("(" + data + ")");
+                            if (d.judge == "certCodeFail") {
+                                $(".ErrorStyle").empty();
+                                $("#certCodeError").text("验证码错误");
+                                return;
                             }
+                            if (d.stuFound) {
+                                /* 	alert("找到了学生信息"); */
+                                window.location.href = "stuMain.action";
+                                return;
+                            }
+                            else if (d.teacherFound) {
+                                /* alert("找到了教师信息"); */
+                                window.location.href = "teacherMain.action";
+                                return;
+                            }
+                            else if (d.administratorFound) {
+                                window.location.href = "adminMain.action";
+                            }
+                            else {
+                                alert("用户名或密码错误，系统拒绝了您的访问请求");
+                                changeimg();
+                                return;
+                            }
+
+                        },
+                        error: function () {
+                            alert("系统异常，请稍后重试！");
                         }
+                    }
                 );
             });
         }
+
         function changeimg() {
             var myimg = document.getElementById("code");
             now = new Date();
             myimg.src = "makeCertPic.jsp?code=" + now.getTime();
         }
+
         $(function () {
             $("input[name=login]").button();
             judgeFun();
@@ -137,9 +140,9 @@
 </head>
 <body>
 <center>
-    <form action="loginCheck.jsp" method="post" id="form1">
-        <table class="datalist">
-            <caption>集美中学学生成绩管理系统登陆界面</caption>
+    <form action="loginCheck.jsp" method="post" id="form1" class="container">
+        <table class="datalist table">
+            <caption>XX中学学生成绩管理系统登陆界面</caption>
             <tr>
                 <th>用户名：</th>
                 <td colspan="2"><input type="text" name="username"/><span id="usernameError" class="ErrorStyle"></span>
@@ -152,7 +155,8 @@
             </tr>
             <tr>
                 <th>验证码：</th>
-                <td><input type="text" name="certCode"/><img id="code" src="makeCertPic.jsp" /><a href="javascript:changeimg()">看不清，换一张 </a></td>
+                <td><input type="text" name="certCode"/><img id="code" src="makeCertPic.jsp"/><a
+                        href="javascript:changeimg()">看不清，换一张 </a></td>
                 <td width="120px"><span id="certCodeError" class="ErrorStyle"></span></td>
             </tr>
             <tr>
@@ -170,8 +174,9 @@
     </form>
     <div>
         <div class="ui-widget">
-            <div class="ui-state-highlight ui-corner-all" style="margin-top: 20px; padding: 0 .7em;">
-                <p style="font-size: 14px;"><span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
+            <div class="ui-state-highlight ui-corner-all" style="margin-top: 20px;">
+                <p style="font-size: 14px;"><span class="ui-icon ui-icon-info"
+                                                  style="float: left;"></span>
                     <strong>学生：</strong> 用户名必须是学生本人的学号；<strong>教师：</strong>用户名必须是教师本人编号；<strong>管理员：</strong>用户名必须是管理员本人姓名
                 </p>
             </div>

@@ -5,7 +5,7 @@
 <head>
     <title>XXX工作室</title>
 
-    <link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
+    <link href="css/bootstrap.min.css" rel="stylesheet"><link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
           rel="stylesheet">
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/jquery-ui-1.10.4.custom.js"></script>
@@ -156,7 +156,7 @@
     <div align="center">
         <form id="form1" name="form1" method="post" action="teacherModifySuc.action">
             <%-- 	<input type="hidden" name="teacher.courseID"  value='<s:property value="teacher.courseID" />' >  --%>
-            <table class="datalist">
+            <table class="datalist table">
                 <tr>
                     <th width="75"><strong>教师编号</strong></th>
                     <td width="419"><input

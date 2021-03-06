@@ -4,7 +4,7 @@
 <html>
 <head>
     <title>XXX工作室</title>
-    <link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
+    <link href="css/bootstrap.min.css" rel="stylesheet"><link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
           rel="stylesheet">
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/jquery-ui-1.10.4.custom.js"></script>
@@ -65,7 +65,7 @@
 <div id="accordion">
     <h3>成绩管理——成绩录入成功</h3>
     <div align="center">
-        <table class="datalist">
+        <table class="datalist table">
             <tr>
                 <th colspan="3" align="center">班级 —— <s:property value="grade.year"/>届（<s:property
                         value="grade.classID"/>）班
@@ -106,7 +106,7 @@
             </tr>
         </table>
         <hr>
-        <table class="datalist">
+        <table class="datalist table">
             <tr>
                 <th><strong>学号</strong></th>
                 <s:iterator value="stuXueHao">

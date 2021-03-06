@@ -4,7 +4,7 @@
 <html>
 <head>
     <title>XXX工作室</title>
-    <link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
+    <link href="css/bootstrap.min.css" rel="stylesheet"><link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
           rel="stylesheet">
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/jquery-ui-1.10.4.custom.js"></script>
@@ -111,7 +111,7 @@
     <h3>成绩管理——成绩统计</h3>
     <div class="frame">
         <form action="scoreCountSuc.action" method="post" id="myForm1">
-            <table class="datalist">
+            <table class="datalist table">
                 <tr>
                     <td>班级：<select name="gradeID" id="gradeID1">
                         <s:iterator value="grades">
@@ -135,7 +135,7 @@
         </form>
 
         <form action="scoreCountNianJi.action" method="post" id="myForm2">
-            <table class="datalist">
+            <table class="datalist table">
                 <tr>
                     <td>
                         年级（届）：<select name="nianJi" id="nianJiId">
