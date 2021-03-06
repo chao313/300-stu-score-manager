@@ -1,18 +1,17 @@
 package com.xscj.dao.impl;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
-
+import com.xscj.dao.TeacherDao;
+import com.xscj.domain.SubTeacher;
+import com.xscj.domain.Teacher;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowCallbackHandler;
 import org.springframework.stereotype.Repository;
 
-import com.xscj.dao.TeacherDao;
-import com.xscj.domain.SubTeacher;
-import com.xscj.domain.Teacher;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 @Repository
 public class JdbcTeacherDaoImpl implements TeacherDao {
@@ -30,11 +29,11 @@ public class JdbcTeacherDaoImpl implements TeacherDao {
     @Override
     public int addTeacherToDb(Teacher teacher) {
         String sqlStr = "INSERT INTO sp_teacher(t_id, t_name, t_pass, t_sex, t_nation, " +
-                "t_pol_stat, t_idcard, t_address, t_job_time, t_edu_bg, t_gra_ins, t_phone, t_course) VALUES(?,?,?,?,?,?," +
-                "?,?,?,?,?,?,?);";
+                "t_pol_stat, t_idcard, t_address, t_job_time, t_edu_bg, t_gra_ins, t_phone, t_course,delflag) VALUES(?,?,?,?,?,?," +
+                "?,?,?,?,?,?,?,?);";
         Object[] args = {teacher.getBianHao(), teacher.getName(), teacher.getPassword(), teacher.getSex(),
                 teacher.getNation(), teacher.getPolStat(), teacher.getIdCard(), teacher.getAddress(),
-                teacher.getJobTime(), teacher.getEduBg(), teacher.getGraIns(), teacher.getPhone(), teacher.getCourseID()};
+                teacher.getJobTime(), teacher.getEduBg(), teacher.getGraIns(), teacher.getPhone(), teacher.getCourseID(), false};
         return jdbcTemplate.update(sqlStr, args);
     }
 

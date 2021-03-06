@@ -1,20 +1,19 @@
 package com.xscj.dao.impl;
 
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
-
+import com.xscj.dao.GradeDao;
+import com.xscj.domain.Grade;
+import com.xscj.domain.GradeInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BatchPreparedStatementSetter;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowCallbackHandler;
 import org.springframework.stereotype.Repository;
 
-import com.xscj.dao.GradeDao;
-import com.xscj.domain.Grade;
-import com.xscj.domain.GradeInfo;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 @Repository
 public class JdbcGradeDaoImpl implements GradeDao {
@@ -88,7 +87,7 @@ public class JdbcGradeDaoImpl implements GradeDao {
 
     @Override
     public int AddGradeToDb(Grade grade) {
-        String sqlString = "INSERT INTO sp_classes(cs_id, cs_date, cs_class, cs_adviser,delflag) VALUES(?, ?, ?, ?,true);";
+        String sqlString = "INSERT INTO sp_classes(cs_id, cs_date, cs_class, cs_adviser,delflag) VALUES(?, ?, ?, ?,false);";
         Object[] args = {grade.getBianHao(), grade.getYear(), grade.getClassID(), grade.getAdviser()};
 
         return jdbcTemplate.update(sqlString, args);

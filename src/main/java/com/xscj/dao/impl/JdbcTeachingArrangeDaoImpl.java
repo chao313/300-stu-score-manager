@@ -3,25 +3,19 @@
  */
 package com.xscj.dao.impl;
 
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
-
+import com.xscj.dao.TeachingArrangeDao;
+import com.xscj.domain.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BatchPreparedStatementSetter;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowCallbackHandler;
 import org.springframework.stereotype.Repository;
 
-import com.xscj.dao.TeachingArrangeDao;
-import com.xscj.domain.Course;
-import com.xscj.domain.Teacher;
-import com.xscj.domain.Teaching;
-import com.xscj.domain.TeachingDetail;
-import com.xscj.domain.TeachingGidXq;
-import com.xscj.domain.TeachingTable;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author leorain
@@ -33,7 +27,7 @@ public class JdbcTeachingArrangeDaoImpl implements TeachingArrangeDao {
 
     @Override
     public void addTeachingArrange(final List<Teaching> teachings) {
-        final String sqlStr = "INSERT INTO sp_ctc VALUES(?,?,?,?);";
+        final String sqlStr = "INSERT INTO sp_ctc(ctc_classid,ctc_teacherid,ctc_courseid,ctc_xueqi) VALUES(?,?,?,?);";
 
         jdbcTemplate.batchUpdate(sqlStr, new BatchPreparedStatementSetter() {
 

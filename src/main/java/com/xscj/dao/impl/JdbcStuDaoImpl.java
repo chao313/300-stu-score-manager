@@ -1,19 +1,18 @@
 package com.xscj.dao.impl;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
-
+import com.xscj.dao.StuDao;
+import com.xscj.domain.SimpleStudent;
+import com.xscj.domain.Student;
+import com.xscj.domain.SubStudent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowCallbackHandler;
 import org.springframework.stereotype.Repository;
 
-import com.xscj.dao.StuDao;
-import com.xscj.domain.SimpleStudent;
-import com.xscj.domain.Student;
-import com.xscj.domain.SubStudent;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 @Repository
 public class JdbcStuDaoImpl implements StuDao {
@@ -29,7 +28,7 @@ public class JdbcStuDaoImpl implements StuDao {
     @Override
     public int addStuToDb(Student student) {
         String sqlStr = "INSERT INTO sp_student(s_name, s_pass, s_sex, s_idcard, s_address, " +
-                "s_nation, s_pol_stat, s_school_time, s_household, s_schoolmethod,s_class) VALUES(?,?,?,?,?,?,?,?,?,?,?);";
+                "s_nation, s_pol_stat, s_school_time, s_household, s_schoolmethod,s_class,delflag) VALUES(?,?,?,?,?,?,?,?,?,?,?,false);";
         Object[] args = {student.getName(), student.getPassword(), student.getSex(), student.getIdCard(),
                 student.getAddress(), student.getNation(), student.getPolStat(), student.getSchoolTime(),
                 student.getHouseHold(), student.getSchoolMethod(), student.getClassID()};
@@ -39,7 +38,7 @@ public class JdbcStuDaoImpl implements StuDao {
     @Override
     public int addStuToDb(int id, Student student) {
         String sqlStr = "INSERT INTO sp_student(s_id, s_name, s_pass, s_sex, s_idcard, s_address, " +
-                "s_nation, s_pol_stat, s_school_time, s_household, s_schoolmethod, s_class) VALUES(?,?,?,?,?,?,?,?,?,?,?,?);";
+                "s_nation, s_pol_stat, s_school_time, s_household, s_schoolmethod, s_class,delflag) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,false);";
         Object[] args = {id, student.getName(), student.getPassword(), student.getSex(), student.getIdCard(),
                 student.getAddress(), student.getNation(), student.getPolStat(), student.getSchoolTime(),
                 student.getHouseHold(), student.getSchoolMethod(), student.getClassID()};

@@ -3,21 +3,20 @@
  */
 package com.xscj.dao.impl;
 
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
-
+import com.xscj.dao.CourseDao;
+import com.xscj.domain.Course;
+import com.xscj.domain.CourseInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BatchPreparedStatementSetter;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowCallbackHandler;
 import org.springframework.stereotype.Repository;
 
-import com.xscj.dao.CourseDao;
-import com.xscj.domain.Course;
-import com.xscj.domain.CourseInfo;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author leorain
@@ -59,7 +58,7 @@ public class JdbcCourseDao implements CourseDao {
 
     @Override
     public int addCourseToDb(Course course) {
-        String sqlStr = "INSERT INTO sp_course(c_id, c_name) VALUES(?,?);";
+        String sqlStr = "INSERT INTO sp_course(c_id, c_name,delflag) VALUES(?,?,false );";
         Object[] args = {course.getBianHao(), course.getName()};
         return jdbcTemplate.update(sqlStr, args);
     }
