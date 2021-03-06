@@ -88,7 +88,7 @@ public class JdbcGradeDaoImpl implements GradeDao {
 
     @Override
     public int AddGradeToDb(Grade grade) {
-        String sqlString = "INSERT INTO sp_classes VALUES(?, ?, ?, ?,false);";
+        String sqlString = "INSERT INTO sp_classes(cs_id, cs_date, cs_class, cs_adviser,delflag) VALUES(?, ?, ?, ?,true);";
         Object[] args = {grade.getBianHao(), grade.getYear(), grade.getClassID(), grade.getAdviser()};
 
         return jdbcTemplate.update(sqlString, args);

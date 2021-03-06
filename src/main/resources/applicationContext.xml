@@ -240,9 +240,9 @@
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init"
     destroy-method="close"
     p:driverClassName="com.mysql.jdbc.Driver"
-    p:url="jdbc:mysql://127.0.0.1:3306/ssm?useUnicode=true&amp;characterEncoding=UTF-8"
+    p:url="jdbc:mysql://127.0.0.1:3306/stu_score_manager?useUnicode=true&amp;characterEncoding=UTF-8"
     p:username="root"
-    p:password="root"
+    p:password="123456"
     ></bean>
     <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate" p:dataSource-ref="dataSource"></bean>
 

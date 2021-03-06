@@ -5,4 +5,6 @@
     String str = image.getCertPic(0, 0, response.getOutputStream());
     //将验证码存入session中
     session.setAttribute("certCode", str);
+    out.clear();
+    out = pageContext.pushBody();
 %>
