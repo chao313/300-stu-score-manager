@@ -13,7 +13,7 @@ import com.xscj.service.StuService;
 
 public class StuSearchGradeTestAction extends ActionSupport {
     /**
-     * @author leorain
+     * @author xxx
      * @date 2014-4-15 下午7:45:27
      */
     private static final long serialVersionUID = 5757892802419038017L;

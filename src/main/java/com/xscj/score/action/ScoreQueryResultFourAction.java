@@ -16,7 +16,7 @@ import com.xscj.service.StuService;
 public class ScoreQueryResultFourAction extends ActionSupport {
 
     /**
-     * @author leorain
+     * @author xxx
      * @date 2014-4-6 下午12:23:45
      * 接收学号、学期、考试类型
      */

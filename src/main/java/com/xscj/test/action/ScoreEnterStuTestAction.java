@@ -17,7 +17,7 @@ import com.xscj.util.Util;
 public class ScoreEnterStuTestAction extends ActionSupport {
 
     /**
-     * @author leorain
+     * @author xxx
      * @date 2014-4-16 下午2:10:45
      */
     private static final long serialVersionUID = 7103265542020117890L;

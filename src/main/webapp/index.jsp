@@ -91,7 +91,7 @@
             margin: 100px;
             background-color: #7ecef4;
             /*background-image: url(image/jmu05.jpg);*/
-            background-image: url(image/loginBg.jpg);
+            /*background-image: url(image/loginBg.jpg);*/
             background-position: center;
             background-repeat: no-repeat;
             background-attachment: fixed;

@@ -17,7 +17,7 @@ import com.xscj.service.TeacherManager;
 import com.xscj.service.TeachingArrange;
 
 /**
- * @author leorain
+ * @author xxx
  */
 public class TeacherSeeingAction extends ActionSupport {
 

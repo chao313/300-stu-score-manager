@@ -14,7 +14,7 @@ import com.xscj.domain.Grade;
 import com.xscj.service.GradeSetUp;
 
 /**
- * @author leorain
+ * @author xxx
  */
 public class ScorePrinterAction extends ActionSupport {
 

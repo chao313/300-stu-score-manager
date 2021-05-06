@@ -7,7 +7,7 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * @author leorain
+ * @author xxx
  */
 public class ScoreTotal implements Serializable {
 

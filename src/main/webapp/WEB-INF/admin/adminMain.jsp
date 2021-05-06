@@ -28,18 +28,18 @@
 
 <body>
 <jsp:include page="stuServiceNavigation.jsp"></jsp:include>
-<div id="accordion">
-    <h3>XX中学学生成绩管理系统欢迎您的使用</h3>
-    <div align="left" id="info">
-        <p><strong>公司：</strong>XXX工作室</p>
-        <p><strong>作者：</strong>谢中贵</p>
-        <p><strong>联系电话：</strong>18365073582</p>
-        <p><strong>QQ：</strong>1573623031</p>
-        <p><strong>Email：</strong>1573623031@qq.com</p>
-        <p><strong>版权说明：</strong>业余娱乐之作，不具有任何版权纠纷。</p>
-        <p><strong>系统说明：</strong>一款小型的通用的中学教务系统，可根据学校具体要求进行修改、扩展。</p>
-        <p><strong>开发目的：</strong>纪念我即将逝去的大学生活。</p>
-    </div>
-</div>
+<%--<div id="accordion">--%>
+    <%--<h3>XX中学学生成绩管理系统欢迎您的使用</h3>--%>
+    <%--<div align="left" id="info">--%>
+        <%--<p><strong>公司：</strong>XXX工作室</p>--%>
+        <%--<p><strong>作者：</strong>XXX</p>--%>
+        <%--<p><strong>联系电话：</strong>XXXXXXXXXXXX</p>--%>
+        <%--<p><strong>QQ：</strong>XXXXXXXXX</p>--%>
+        <%--<p><strong>Email：</strong>XXXXXXXXXXXX@qq.com</p>--%>
+        <%--<p><strong>版权说明：</strong>业余娱乐之作，不具有任何版权纠纷。</p>--%>
+        <%--<p><strong>系统说明：</strong>一款小型的通用的中学教务系统，可根据学校具体要求进行修改、扩展。</p>--%>
+        <%--<p><strong>开发目的：</strong>纪念我即将逝去的大学生活。</p>--%>
+    <%--</div>--%>
+<%--</div>--%>
 </body>
 </html>

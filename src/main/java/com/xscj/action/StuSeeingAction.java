@@ -14,7 +14,7 @@ import com.xscj.service.StuService;
 import com.xscj.util.Util;
 
 /**
- * @author leorain
+ * @author xxx
  * @date 2014-4-13 上午8:09:06
  */
 public class StuSeeingAction extends ActionSupport {

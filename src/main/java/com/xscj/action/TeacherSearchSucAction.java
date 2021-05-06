@@ -11,7 +11,7 @@ import com.xscj.domain.Teacher;
 import com.xscj.service.TeacherManager;
 
 /**
- * @author leorain
+ * @author xxx
  * @date 2014-4-13 下午5:49:29
  */
 public class TeacherSearchSucAction extends ActionSupport {

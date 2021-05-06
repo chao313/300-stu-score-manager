@@ -5,7 +5,7 @@ import java.io.Serializable;
 public class ScorePart implements Serializable {
 
     /**
-     * @author leorain
+     * @author xxx
      * @date 2014-4-2 上午10:39:50
      * 课程编号、课程名、考试时间、考试类型、成绩
      */

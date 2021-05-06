@@ -21,7 +21,7 @@ import com.xscj.service.StuService;
 import com.xscj.service.TeachingArrange;
 
 /**
- * @author leorain
+ * @author xxx
  */
 public class TeacherScoreAddAction extends ActionSupport {
 

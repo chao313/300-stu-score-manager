@@ -15,7 +15,7 @@ import com.xscj.service.CoursePlan;
 import com.xscj.service.TeacherManager;
 
 /**
- * @author leorain
+ * @author xxx
  * @date 2014-4-13 下午1:58:42
  */
 public class TeacherModifyAction extends ActionSupport {

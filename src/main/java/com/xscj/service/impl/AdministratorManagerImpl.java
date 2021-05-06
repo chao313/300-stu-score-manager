@@ -11,7 +11,7 @@ import com.xscj.dao.AdministratorDao;
 import com.xscj.service.AdministratorManager;
 
 /**
- * @author leorain
+ * @author xxx
  */
 @Service
 public class AdministratorManagerImpl implements AdministratorManager {

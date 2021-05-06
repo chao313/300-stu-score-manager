@@ -6,7 +6,7 @@ package com.xscj.action;
 import com.opensymphony.xwork2.ActionSupport;
 
 /**
- * @author leorain
+ * @author xxx
  * @date 2014-4-19 上午6:59:13
  */
 public class AdminMainAction extends ActionSupport {

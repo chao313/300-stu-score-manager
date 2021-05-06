@@ -31,7 +31,7 @@ import com.xscj.service.CoursePlan;
 import com.xscj.service.ScoreService;
 
 /**
- * @author leorain
+ * @author xxx
  */
 public class ScoreVariationLineAction extends ActionSupport {
 

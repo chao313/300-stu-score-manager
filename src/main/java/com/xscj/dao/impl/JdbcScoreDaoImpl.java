@@ -29,7 +29,7 @@ import com.xscj.domain.SimpleScore;
 import com.xscj.domain.StuScoreCount;
 
 /**
- * @author leorain
+ * @author xxx
  * @date 2014-3-24 下午8:19:50
  */
 @Repository

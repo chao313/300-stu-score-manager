@@ -73,6 +73,7 @@ public class ScoreEnterTestAction extends ActionSupport {
         course = coursePlan.getCourseByCourseID(courseID);
         Map<String, Object> map = new HashMap<String, Object>();
         map.put("flag", n);
+//        map.put("flag", 0);
         map.put("gradeName", grade.getYear() + "届（" + grade.getClassID() + "）班第" + xueqi + "学期");
         map.put("courseName", course.getName());
         JSONObject json = JSONObject.fromObject(map);

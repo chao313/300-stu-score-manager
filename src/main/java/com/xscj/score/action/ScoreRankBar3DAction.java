@@ -19,7 +19,7 @@ import org.jfree.data.category.DefaultCategoryDataset;
 import com.opensymphony.xwork2.ActionSupport;
 
 /**
- * @author leorain
+ * @author xxx
  */
 public class ScoreRankBar3DAction extends ActionSupport {
 

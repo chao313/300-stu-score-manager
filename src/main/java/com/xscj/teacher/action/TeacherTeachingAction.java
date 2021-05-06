@@ -20,7 +20,7 @@ import com.xscj.service.TeacherManager;
 import com.xscj.service.TeachingArrange;
 
 /**
- * @author leorain
+ * @author xxx
  * @date 2014-3-23 下午7:00:19
  */
 public class TeacherTeachingAction extends ActionSupport {

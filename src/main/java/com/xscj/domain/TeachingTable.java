@@ -6,7 +6,7 @@ package com.xscj.domain;
 import java.io.Serializable;
 
 /**
- * @author leorain
+ * @author xxx
  * @date 2014-4-19 下午2:35:16
  */
 public class TeachingTable implements Serializable {

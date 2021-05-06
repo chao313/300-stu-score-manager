@@ -19,7 +19,7 @@ import com.xscj.service.ScoreService;
 import com.xscj.service.StuService;
 
 /**
- * @author leorain
+ * @author xxx
  * @date 2014-4-3 上午10:25:05
  * 获得填入的学生学号和选择的课程
  */

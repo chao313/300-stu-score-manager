@@ -16,7 +16,7 @@ import com.opensymphony.xwork2.ActionSupport;
 import com.xscj.service.StuService;
 
 /**
- * @author leorain
+ * @author xxx
  */
 public class PassModifyAction extends ActionSupport {
 

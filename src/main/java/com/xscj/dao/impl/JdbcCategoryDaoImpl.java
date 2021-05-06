@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 import com.xscj.dao.CategoryDao;
 
 /**
- * @author leorain
+ * @author xxx
  */
 @Repository
 public class JdbcCategoryDaoImpl implements CategoryDao {

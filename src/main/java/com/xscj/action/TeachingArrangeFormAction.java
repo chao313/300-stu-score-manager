@@ -23,7 +23,7 @@ import com.xscj.service.TeachingArrange;
 import com.xscj.util.Util;
 
 /**
- * @author leorain
+ * @author xxx
  * @date 2014-3-19 下午5:44:02
  * <p>
  * 班级 课程 授课老师安排

@@ -15,7 +15,7 @@ import com.xscj.domain.SubStudent;
 import com.xscj.service.StuService;
 
 /**
- * @author leorain
+ * @author xxx
  * @date 2014-3-24 上午10:08:12
  */
 public class ScoreRecordAction extends ActionSupport {

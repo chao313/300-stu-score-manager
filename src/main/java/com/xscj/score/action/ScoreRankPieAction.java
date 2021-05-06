@@ -21,12 +21,12 @@ import com.xscj.domain.Course;
 import com.xscj.service.CoursePlan;
 
 /**
- * @author leorain
+ * @author xxx
  */
 public class ScoreRankPieAction extends ActionSupport {
 
     /**
-     * @author leorain
+     * @author xxx
      * @date 2014-3-31 下午8:40:43
      */
     private static final long serialVersionUID = 5628961410171908654L;

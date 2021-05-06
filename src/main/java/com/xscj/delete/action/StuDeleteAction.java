@@ -10,7 +10,7 @@ import com.opensymphony.xwork2.ActionSupport;
 import com.xscj.service.StuService;
 
 /**
- * @author leorain
+ * @author xxx
  * @date 2014-3-21 下午3:04:26
  */
 public class StuDeleteAction extends ActionSupport {

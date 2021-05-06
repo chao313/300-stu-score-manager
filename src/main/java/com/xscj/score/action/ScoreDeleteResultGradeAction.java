@@ -17,7 +17,7 @@ import com.xscj.service.GradeSetUp;
 import com.xscj.service.ScoreService;
 
 /**
- * @author leorain
+ * @author xxx
  * @date 2014-4-10 上午9:02:15
  */
 public class ScoreDeleteResultGradeAction extends ActionSupport {

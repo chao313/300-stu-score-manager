@@ -34,7 +34,7 @@ import com.itextpdf.text.pdf.PdfWriter;
 
 
 /**
- * @author leorain
+ * @author xxx
  */
 public class ScorePrinterSucAction extends ActionSupport {
 

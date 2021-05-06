@@ -13,7 +13,7 @@ import com.xscj.domain.GradeInfo;
 import com.xscj.service.GradeSetUp;
 
 /**
- * @author leorain
+ * @author xxx
  * @date 2014-4-16 上午8:21:58
  */
 public class GradeAllAction extends ActionSupport {

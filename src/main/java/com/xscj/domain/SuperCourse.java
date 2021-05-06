@@ -7,7 +7,7 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * @author leorain
+ * @author xxx
  * @date 2014-3-19 下午5:54:18
  * <p>
  * 包含课程编号 课程名称 对应授课老师集合

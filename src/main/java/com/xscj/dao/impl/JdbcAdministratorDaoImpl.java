@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 import com.xscj.dao.AdministratorDao;
 
 /**
- * @author leorain
+ * @author xxx
  */
 @Repository
 public class JdbcAdministratorDaoImpl implements AdministratorDao {

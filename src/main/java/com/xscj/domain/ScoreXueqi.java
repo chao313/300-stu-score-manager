@@ -6,12 +6,12 @@ package com.xscj.domain;
 import java.io.Serializable;
 
 /**
- * @author leorain
+ * @author xxx
  */
 public class ScoreXueqi implements Serializable {
 
     /**
-     * @author leorain
+     * @author xxx
      * @date 2014-4-3 上午10:10:27
      * 学期、考试时间、考试类型、成绩
      */

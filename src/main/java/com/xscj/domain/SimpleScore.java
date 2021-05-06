@@ -6,7 +6,7 @@ package com.xscj.domain;
 import java.io.Serializable;
 
 /**
- * @author leorain
+ * @author xxx
  */
 public class SimpleScore implements Serializable {
 

@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class Course implements Serializable {
     /**
-     * @author leorain
+     * @author xxx
      */
     private static final long serialVersionUID = -7078200135598223756L;
     private String bianHao; //课程编号

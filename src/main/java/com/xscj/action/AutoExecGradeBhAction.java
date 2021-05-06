@@ -15,7 +15,7 @@ import com.opensymphony.xwork2.ActionSupport;
 import com.xscj.service.CategoryService;
 
 /**
- * @author leorain
+ * @author xxx
  * @date 2014-3-18 下午7:03:22
  */
 public class AutoExecGradeBhAction extends ActionSupport {

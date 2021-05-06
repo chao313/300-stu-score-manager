@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author leorain
+ * @author xxx
  */
 @Repository
 public class JdbcTeachingArrangeDaoImpl implements TeachingArrangeDao {

@@ -16,7 +16,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * @author leorain
+ * @author xxx
  * @date 2014-4-18 下午11:10:39
  */
 public class StuAuthorityInterceptor extends AbstractInterceptor {

@@ -16,7 +16,7 @@ import com.xscj.service.ScoreService;
 import com.xscj.service.StuService;
 
 /**
- * @author leorain
+ * @author xxx
  */
 public class ScoreDeleteResultSucAction extends ActionSupport {
 

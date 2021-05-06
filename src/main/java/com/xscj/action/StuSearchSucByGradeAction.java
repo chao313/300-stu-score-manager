@@ -15,7 +15,7 @@ import com.xscj.service.GradeSetUp;
 import com.xscj.service.StuService;
 
 /**
- * @author leorain
+ * @author xxx
  * @date 2014-4-13 下午8:01:58
  */
 public class StuSearchSucByGradeAction extends ActionSupport {

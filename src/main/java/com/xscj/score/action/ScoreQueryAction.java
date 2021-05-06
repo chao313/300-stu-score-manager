@@ -15,7 +15,7 @@ import com.xscj.service.CoursePlan;
 import com.xscj.service.GradeSetUp;
 
 /**
- * @author leorain
+ * @author xxx
  * @date 2014-4-2 上午8:45:22
  */
 public class ScoreQueryAction extends ActionSupport {

@@ -18,7 +18,7 @@ import com.xscj.service.ScoreService;
 import com.xscj.service.StuService;
 
 /**
- * @author leorain
+ * @author xxx
  */
 public class StuScoreSearchAction extends ActionSupport {
 

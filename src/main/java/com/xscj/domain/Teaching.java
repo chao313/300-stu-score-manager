@@ -6,7 +6,7 @@ package com.xscj.domain;
 import java.io.Serializable;
 
 /**
- * @author leorain
+ * @author xxx
  * @date 2014-3-20 上午8:45:33
  */
 public class Teaching implements Serializable {

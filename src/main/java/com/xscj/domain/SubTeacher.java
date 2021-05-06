@@ -6,7 +6,7 @@ package com.xscj.domain;
 import java.io.Serializable;
 
 /**
- * @author leorain
+ * @author xxx
  * @date 2014-3-19 下午5:47:27
  * 包含两个教师属性 教师编号 教师姓名
  */

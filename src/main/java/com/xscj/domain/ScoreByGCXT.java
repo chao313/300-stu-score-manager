@@ -6,7 +6,7 @@ package com.xscj.domain;
 import java.io.Serializable;
 
 /**
- * @author leorain
+ * @author xxx
  * @date 2014-4-6 下午4:01:06
  * 学号、姓名、考试时间、最后成绩
  */

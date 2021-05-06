@@ -17,7 +17,7 @@ import com.xscj.service.GradeSetUp;
 import com.xscj.service.ScoreService;
 
 /**
- * @author leorain
+ * @author xxx
  */
 public class ScoreCountNianJiAction extends ActionSupport {
 

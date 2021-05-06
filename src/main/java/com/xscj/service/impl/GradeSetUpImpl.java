@@ -15,7 +15,7 @@ import com.xscj.domain.GradeInfo;
 import com.xscj.service.GradeSetUp;
 
 /**
- * @author leorain
+ * @author xxx
  */
 @Service
 public class GradeSetUpImpl implements GradeSetUp {
@@ -34,7 +34,7 @@ public class GradeSetUpImpl implements GradeSetUp {
     }
 
     /**
-     * @author leorain
+     * @author xxx
      * @date 2014-3-18 上午9:44:54
      */
     @Override

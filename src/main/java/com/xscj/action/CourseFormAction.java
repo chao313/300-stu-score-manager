@@ -12,7 +12,7 @@ import com.xscj.service.CoursePlan;
 public class CourseFormAction extends ActionSupport {
 
     /**
-     * @author leorain 课程添加表单页面
+     * @author xxx 课程添加表单页面
      */
     private static final long serialVersionUID = 328222599468397267L;
     @Autowired

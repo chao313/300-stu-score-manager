@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author leorain
+ * @author xxx
  */
 @Repository
 public class JdbcCourseDao implements CourseDao {
@@ -28,7 +28,7 @@ public class JdbcCourseDao implements CourseDao {
     private JdbcTemplate jdbcTemplate;
 
     /**
-     * @author leorain 得到课程总数底层操作JDBC实现
+     * @author xxx 得到课程总数底层操作JDBC实现
      */
     @Override
     public int getCourseCount() {
@@ -37,7 +37,7 @@ public class JdbcCourseDao implements CourseDao {
     }
 
     /**
-     * @author leorain 得到所有课程列表底层操作JDBC实现
+     * @author xxx 得到所有课程列表底层操作JDBC实现
      */
     @Override
     public List<Course> getAllCourses() {

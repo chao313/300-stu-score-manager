@@ -6,7 +6,7 @@ package com.xscj.domain;
 import java.io.Serializable;
 
 /**
- * @author leorain 班级实体类
+ * @author xxx 班级实体类
  */
 public class Grade implements Serializable {
     /**

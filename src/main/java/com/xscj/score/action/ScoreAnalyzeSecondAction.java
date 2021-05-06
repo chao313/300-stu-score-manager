@@ -27,7 +27,7 @@ import com.xscj.domain.ScoreXueqi;
 import com.xscj.service.ScoreService;
 
 /**
- * @author leorain
+ * @author xxx
  * @date 2014-4-3 上午11:16:59
  */
 public class ScoreAnalyzeSecondAction extends ActionSupport {

@@ -18,7 +18,7 @@ import com.xscj.domain.TeachingTable;
 import com.xscj.service.TeachingArrange;
 
 /**
- * @author leorain
+ * @author xxx
  */
 @Service
 public class TeachingArrangeImpl implements TeachingArrange {

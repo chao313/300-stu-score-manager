@@ -17,7 +17,7 @@ import com.xscj.service.TeachingArrange;
 import com.xscj.util.Util;
 
 /**
- * @author leorain
+ * @author xxx
  * @date 2014-4-20 上午10:02:00
  */
 public class TeachingArrangeModifyAction extends ActionSupport {

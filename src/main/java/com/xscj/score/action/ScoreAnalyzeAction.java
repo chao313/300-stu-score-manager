@@ -32,7 +32,7 @@ import com.xscj.domain.ScorePart;
 import com.xscj.service.ScoreService;
 
 /**
- * @author leorain
+ * @author xxx
  * @date 2014-4-3 上午8:06:13
  * <p>
  * 对某个学生的所有成绩进行整体分析

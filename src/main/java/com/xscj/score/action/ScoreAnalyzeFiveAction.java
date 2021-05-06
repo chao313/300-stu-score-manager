@@ -30,7 +30,7 @@ import java.awt.*;
 import java.util.List;
 
 /**
- * @author leorain
+ * @author xxx
  * @date 2014-4-6 下午4:38:52
  */
 public class ScoreAnalyzeFiveAction extends ActionSupport {

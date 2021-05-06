@@ -6,7 +6,7 @@ package com.xscj.domain;
 import java.io.Serializable;
 
 /**
- * @author leorain
+ * @author xxx
  * @date 2014-4-14 下午9:05:25
  */
 public class ScoreCount implements Serializable {

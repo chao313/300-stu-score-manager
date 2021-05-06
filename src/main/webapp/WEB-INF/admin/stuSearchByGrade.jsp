@@ -75,7 +75,7 @@
             &nbsp;&nbsp;&nbsp;<input type="button" name="searchBtn" value="查询"/>
         </form>
         <hr>
-        <img alt="" src="image/stuInfoSearch.jpg" width="1000" height="500"/>
+        <%--<img alt="" src="image/stuInfoSearch.jpg" width="1000" height="500"/>--%>
     </div>
 </div>
 </body>

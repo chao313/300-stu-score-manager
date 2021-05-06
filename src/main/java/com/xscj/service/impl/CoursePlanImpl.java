@@ -18,7 +18,7 @@ public class CoursePlanImpl implements CoursePlan {
     private CourseDao courseDao;
 
     /**
-     * @author leorain 得到课程总数业务逻辑处理实现类
+     * @author xxx 得到课程总数业务逻辑处理实现类
      */
     @Override
     public int getCourseCount() {
@@ -26,7 +26,7 @@ public class CoursePlanImpl implements CoursePlan {
     }
 
     /**
-     * @author leorain 得到所有课程列表业务逻辑处理实现类
+     * @author xxx 得到所有课程列表业务逻辑处理实现类
      */
     @Override
     public List<Course> getAllCourses() {

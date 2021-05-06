@@ -56,7 +56,7 @@ import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
 
 /**
- * @author leorain
+ * @author xxx
  */
 public class ScorePrinterGradeSucAction extends ActionSupport {
 

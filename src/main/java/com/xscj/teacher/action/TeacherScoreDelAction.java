@@ -19,7 +19,7 @@ import com.xscj.service.ScoreService;
 import com.xscj.service.TeachingArrange;
 
 /**
- * @author leorain
+ * @author xxx
  * @date 2014-4-10 上午9:02:15
  */
 public class TeacherScoreDelAction extends ActionSupport {

@@ -19,7 +19,7 @@ import com.xscj.service.StuService;
 import com.xscj.service.TeachingArrange;
 
 /**
- * @author leorain
+ * @author xxx
  * @date 2014-4-7 上午6:57:32
  */
 public class ScoreEnterSimpleStuAction extends ActionSupport {

@@ -10,7 +10,7 @@ import com.opensymphony.xwork2.ActionSupport;
 import com.xscj.service.GradeSetUp;
 
 /**
- * @author leorain
+ * @author xxx
  */
 public class GradeDeleteAction extends ActionSupport {
 

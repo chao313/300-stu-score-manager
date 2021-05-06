@@ -7,7 +7,7 @@ import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 
 /**
- * @author leorain
+ * @author xxx
  */
 public class ExitSystemAction extends ActionSupport {
 

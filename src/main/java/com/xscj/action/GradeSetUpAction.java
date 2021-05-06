@@ -17,7 +17,7 @@ import com.xscj.service.GradeSetUp;
 import com.xscj.service.TeacherManager;
 
 /**
- * @author leorain
+ * @author xxx
  */
 public class GradeSetUpAction extends ActionSupport {
 

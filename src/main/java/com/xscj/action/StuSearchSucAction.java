@@ -12,7 +12,7 @@ import com.xscj.service.StuService;
 import com.xscj.util.Util;
 
 /**
- * @author leorain
+ * @author xxx
  * @date 2014-4-13 下午5:15:46
  */
 public class StuSearchSucAction extends ActionSupport {

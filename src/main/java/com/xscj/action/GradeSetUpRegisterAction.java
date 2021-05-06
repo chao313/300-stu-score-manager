@@ -12,12 +12,12 @@ import com.xscj.service.CategoryService;
 import com.xscj.service.GradeSetUp;
 
 /**
- * @author leorain
+ * @author xxx
  */
 public class GradeSetUpRegisterAction extends ActionSupport {
 
     /**
-     * @author leorain
+     * @author xxx
      * @date 2014-3-18 下午7:55:37
      */
     private static final long serialVersionUID = -4766023513573972878L;

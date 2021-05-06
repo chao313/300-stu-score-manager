@@ -10,7 +10,7 @@ import com.opensymphony.xwork2.ActionSupport;
 import com.xscj.service.CoursePlan;
 
 /**
- * @author leorain
+ * @author xxx
  * @date 2014-3-21 下午1:19:40
  * 课程删除按钮触发的请求
  */

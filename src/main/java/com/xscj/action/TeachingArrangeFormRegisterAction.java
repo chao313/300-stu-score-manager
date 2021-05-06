@@ -13,7 +13,7 @@ import com.xscj.service.TeachingArrange;
 public class TeachingArrangeFormRegisterAction extends ActionSupport {
 
     /**
-     * @author leorain 班级 课程 授课老师设置完成Action
+     * @author xxx 班级 课程 授课老师设置完成Action
      * @date 2014-3-19 下午11:31:28
      */
     private static final long serialVersionUID = 6900972182521936666L;

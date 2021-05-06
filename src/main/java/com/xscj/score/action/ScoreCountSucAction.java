@@ -18,7 +18,7 @@ import com.xscj.service.ScoreService;
 import com.xscj.service.TeachingArrange;
 
 /**
- * @author leorain
+ * @author xxx
  * @date 2014-4-14 下午8:54:02
  */
 public class ScoreCountSucAction extends ActionSupport {

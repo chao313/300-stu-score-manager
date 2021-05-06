@@ -17,7 +17,7 @@ import com.xscj.service.ScoreService;
 import com.xscj.service.StuService;
 
 /**
- * @author leorain
+ * @author xxx
  * @date 2014-4-2 上午9:48:36
  */
 public class ScoreQueryResultAction extends ActionSupport {

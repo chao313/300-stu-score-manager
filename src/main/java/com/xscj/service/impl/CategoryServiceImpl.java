@@ -11,7 +11,7 @@ import com.xscj.dao.CategoryDao;
 import com.xscj.service.CategoryService;
 
 /**
- * @author leorain
+ * @author xxx
  */
 @Service
 public class CategoryServiceImpl implements CategoryService {

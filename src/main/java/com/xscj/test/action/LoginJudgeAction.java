@@ -19,7 +19,7 @@ import com.xscj.service.TeacherManager;
 import com.xscj.util.Util;
 
 /**
- * @author leorain
+ * @author xxx
  */
 public class LoginJudgeAction extends ActionSupport {
 
