@@ -9,13 +9,13 @@ package com.xscj.service;
 public interface CategoryService {
     /**
      * @author xxx
-     * @date 2014-4-13 上午5:49:35
+     * @date
      */
     public int getCount(String categorys);
 
     /**
      * @author xxx
-     * @date 2014-4-13 上午5:49:51
+     * @date
      */
     public void updateCount(String categorys);
 }

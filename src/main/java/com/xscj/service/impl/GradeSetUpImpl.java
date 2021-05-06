@@ -35,7 +35,7 @@ public class GradeSetUpImpl implements GradeSetUp {
 
     /**
      * @author xxx
-     * @date 2014-3-18 上午9:44:54
+     * @date
      */
     @Override
     public int getMaxYear() {

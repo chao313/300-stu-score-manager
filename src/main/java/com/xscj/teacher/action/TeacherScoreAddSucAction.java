@@ -19,7 +19,7 @@ import com.xscj.service.ScoreService;
 
 /**
  * @author xxx
- * @date 2014-3-24 下午7:41:19
+ * @date
  * <p>
  * 成绩注册完成Action
  */

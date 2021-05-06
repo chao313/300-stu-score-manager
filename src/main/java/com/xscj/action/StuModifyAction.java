@@ -17,7 +17,7 @@ import com.xscj.util.Util;
 
 /**
  * @author xxx
- * @date 2014-4-13 上午9:06:24
+ * @date
  */
 public class StuModifyAction extends ActionSupport {
 

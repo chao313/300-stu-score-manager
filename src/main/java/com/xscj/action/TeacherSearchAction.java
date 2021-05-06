@@ -7,7 +7,7 @@ import com.opensymphony.xwork2.ActionSupport;
 
 /**
  * @author xxx
- * @date 2014-4-12 下午8:31:00
+ * @date
  */
 public class TeacherSearchAction extends ActionSupport {
 

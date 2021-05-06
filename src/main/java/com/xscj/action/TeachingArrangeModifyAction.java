@@ -18,7 +18,7 @@ import com.xscj.util.Util;
 
 /**
  * @author xxx
- * @date 2014-4-20 上午10:02:00
+ * @date
  */
 public class TeachingArrangeModifyAction extends ActionSupport {
 

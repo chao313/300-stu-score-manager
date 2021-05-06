@@ -18,7 +18,7 @@ public class ScoreEnterStuTestAction extends ActionSupport {
 
     /**
      * @author xxx
-     * @date 2014-4-16 下午2:10:45
+     * @date
      */
     private static final long serialVersionUID = 7103265542020117890L;
 

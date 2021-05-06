@@ -16,7 +16,7 @@ import com.xscj.service.GradeSetUp;
 
 /**
  * @author xxx
- * @date 2014-3-31 上午8:51:10
+ * @date
  * 选择班级、选择学期、选择课程界面Action
  */
 public class ScoreEnterChoseAction extends ActionSupport {

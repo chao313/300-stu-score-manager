@@ -19,7 +19,7 @@ import com.xscj.service.TeachingArrange;
 
 /**
  * @author xxx
- * @date 2014-4-14 下午8:54:02
+ * @date
  */
 public class ScoreCountSucAction extends ActionSupport {
 

@@ -7,7 +7,7 @@ import java.io.Serializable;
 
 /**
  * @author xxx
- * @date 2014-4-19 下午2:35:16
+ * @date
  */
 public class TeachingTable implements Serializable {
 

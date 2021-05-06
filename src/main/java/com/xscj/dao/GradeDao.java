@@ -29,79 +29,79 @@ public interface GradeDao {
 
     /**
      * @author xxx得到指定区间内班级个数
-     * @date 2014-3-18 上午9:48:57
+     * @date
      */
     public int getValidGradeCount(int minYear, int maxYear);
 
     /**
      * @author xxx得到指定区间内班级列表
-     * @date 2014-3-18 上午9:59:06
+     * @date
      */
     public List<Grade> getValidAllGrades(int minYear, int maxYear);
 
 
     /**
      * @author xxx 得到某一届总共有多少个班
-     * @date 2014-3-18 下午7:40:13
+     * @date
      */
     public int getClassesCount(int maxYear);
 
 
     /**
      * @author xxx 向数据库中添加一条新的班级信息
-     * @date 2014-3-18 下午7:56:48
+     * @date
      */
     public int AddGradeToDb(Grade grade);
 
     /**
      * @author xxx 得到最新一届的班级列表
-     * @date 2014-3-19 上午7:56:46
+     * @date
      */
     public List<Grade> getMaxYearGrades(int maxYear);
 
     /**
      * @author xxx得到某条具体的班级信息
-     * @date 2014-3-20 上午10:42:37
+     * @date
      */
     public Grade getGradeBybianHao(String bianHao);
 
     /**
      * @author xxx
-     * @date 2014-3-21 下午2:25:07
+     * @date
      * 模拟删除 设置删除标志
      */
     public void deleteChoiceGrades(String[] gradeStrings);
 
     /**
      * @author xxx
-     * @date 2014-4-2 上午10:22:49
+     * @date
      * 通过学生学号获得这个学生的班级信息
      */
     public Grade getGradeBystuXueHao(int stuXueHao);
 
     /**
      * @author xxx
-     * @date 2014-4-3 下午1:05:22
+     * @date
      * 得到所有合法的班级信息集合
      */
     public List<Grade> getALLValidGrades();
 
     /**
      * @author xxx
-     * @date 2014-4-16 上午8:27:21
+     * @date
      * @return获得所有班级的详细信息
      */
     public List<GradeInfo> getGradeInfos();
 
     /**
      * @author xxx
-     * @date 2014-4-18 下午3:56:35
+     * @date
      */
     public List<Grade> getGradesEnableDel();
 
     /**
      * @author xxx
-     * @date 2014-5-9 下午20:32:34
+     * @date
      */
     public List<Integer> getYears();
 

@@ -29,7 +29,7 @@ public interface StuService {
 
     /**
      * @author xxx
-     * @date 2014-3-21 下午2:53:09
+     * @date
      * <p>
      * 得到有效的学生总人数
      */
@@ -38,7 +38,7 @@ public interface StuService {
 
     /**
      * @author xxx
-     * @date 2014-3-21 下午3:08:35
+     * @date
      * 模拟删除 设置删除标志
      */
 
@@ -46,14 +46,14 @@ public interface StuService {
 
     /**
      * @author xxx
-     * @date 2014-3-24 上午10:23:37
+     * @date
      * 根据班级编号获得这个班级所有学生的学号以及姓名
      */
     public List<SubStudent> getAllSubStudentsByGradeID(String gradeID);
 
     /**
      * @author xxx
-     * @date 2014-4-2 上午11:45:48
+     * @date
      * 根据学生学号查询这个学生的姓名
      */
     public SubStudent getSubStudentByXueHao(int stuXueHao);
@@ -61,7 +61,7 @@ public interface StuService {
     /**
      * @return 返回某次考试某门课程所有成绩未记录的学生集合
      * @author xxx
-     * @date 2014-4-7 下午12:35:01
+     * @date
      * @param班级编号
      * @param学期
      * @param考试类型
@@ -73,13 +73,13 @@ public interface StuService {
      * @param 学生学号
      * @return 学生的个人基本信息
      * @author xxx
-     * @date 2014-4-13 上午8:17:03
+     * @date
      */
     public Student getStudent(int xuehao);
 
     /**
      * @author xxx
-     * @date 2014-4-13 上午10:14:57
+     * @date
      * @param学号
      * @param学生信息
      * @return更新学生信息
@@ -89,7 +89,7 @@ public interface StuService {
 
     /**
      * @author xxx
-     * @date 2014-4-13 下午5:25:39
+     * @date
      * @param学生学号
      * @return学生简单的个人信息
      */
@@ -98,7 +98,7 @@ public interface StuService {
 
     /**
      * @author xxx
-     * @date 2014-4-13 下午8:05:18
+     * @date
      * @param班级编号
      * @return返回某个班级的所有学生集合
      */
@@ -106,21 +106,21 @@ public interface StuService {
 
     /**
      * @author xxx
-     * @date 2014-4-15 下午7:49:52
+     * @date
      * @return判断学生是否存在
      */
     public int isExisits(int stuXueHao);
 
     /**
      * @author xxx
-     * @date 2014-4-15 下午8:39:44
+     * @date
      * @return判断某个班级是否有学生存在
      */
     public int isExisits(String gradeID);
 
     /**
      * @author xxx
-     * @date 2014-4-18 下午9:23:30
+     * @date
      */
     public int isExisits(int stuXueHao, String password);
 

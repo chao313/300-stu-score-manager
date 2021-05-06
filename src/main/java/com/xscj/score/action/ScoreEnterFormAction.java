@@ -21,14 +21,14 @@ import com.xscj.service.TeachingArrange;
 
 /**
  * @author xxx
- * @date 2014-3-31 上午11:57:37
+ * @date
  * 成绩录入主页面Action
  */
 public class ScoreEnterFormAction extends ActionSupport {
 
     /**
      * @author xxx
-     * @date 2014-3-31 上午11:57:31
+     * @date
      */
     private static final long serialVersionUID = -9084241344409632807L;
     /**

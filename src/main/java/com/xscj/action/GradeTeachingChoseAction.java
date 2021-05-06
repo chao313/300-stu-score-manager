@@ -14,7 +14,7 @@ import com.xscj.service.GradeSetUp;
 
 /**
  * @author xxx 选择班级进行教学安排
- * @date 2014-3-20 上午9:30:46
+ * @date
  */
 public class GradeTeachingChoseAction extends ActionSupport {
 

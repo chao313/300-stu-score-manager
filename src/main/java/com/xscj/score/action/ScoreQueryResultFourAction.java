@@ -17,7 +17,7 @@ public class ScoreQueryResultFourAction extends ActionSupport {
 
     /**
      * @author xxx
-     * @date 2014-4-6 下午12:23:45
+     * @date
      * 接收学号、学期、考试类型
      */
     private static final long serialVersionUID = -2912267748483392213L;

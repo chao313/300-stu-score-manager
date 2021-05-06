@@ -27,7 +27,7 @@ public class ScoreRankPieAction extends ActionSupport {
 
     /**
      * @author xxx
-     * @date 2014-3-31 下午8:40:43
+     * @date
      */
     private static final long serialVersionUID = 5628961410171908654L;
 

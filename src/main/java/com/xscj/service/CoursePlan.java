@@ -23,7 +23,7 @@ public interface CoursePlan {
 
     /**
      * @author xxx 复合查询 课程表 教学安排表
-     * @date 2014-3-20 上午10:28:24
+     * @date
      */
 
     public List<Course> getCoursesByGradeAndXueQi(String GradeStr, int xueqi);
@@ -31,7 +31,7 @@ public interface CoursePlan {
 
     /**
      * @author xxx
-     * @date 2014-3-21 下午12:53:44
+     * @date
      * <p>
      * 得到删除标志为false的课程总记录数目
      */
@@ -39,7 +39,7 @@ public interface CoursePlan {
 
     /**
      * @author xxx
-     * @date 2014-3-21 下午12:55:41
+     * @date
      * 得到删除标志为false的课程列表
      */
     public List<Course> getValidAllCourses();
@@ -47,7 +47,7 @@ public interface CoursePlan {
 
     /**
      * @author xxx
-     * @date 2014-3-21 下午1:26:26
+     * @date
      * <p>
      * 模拟删除
      **/
@@ -56,21 +56,21 @@ public interface CoursePlan {
 
     /**
      * @author xxx
-     * @date 2014-3-23 下午8:21:26
+     * @date
      * 通过课程编号获得课程详细信息
      */
     public Course getCourseByCourseID(String courseID);
 
     /**
      * @author xxx
-     * @date 2014-4-16 上午5:54:14
+     * @date
      * 获得所有课程的详细信息
      */
     public List<CourseInfo> getAllCourseInfos();
 
     /**
      * @author xxx
-     * @date 2014-4-18 下午3:43:11
+     * @date
      */
     public List<Course> getCoursesEnableDel();
 }

@@ -11,7 +11,7 @@ import com.xscj.service.CoursePlan;
 
 /**
  * @author xxx
- * @date 2014-3-21 下午1:19:40
+ * @date
  * 课程删除按钮触发的请求
  */
 public class CourseDeleteAction extends ActionSupport {

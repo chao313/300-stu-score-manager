@@ -28,7 +28,7 @@ import com.xscj.service.ScoreService;
 
 /**
  * @author xxx
- * @date 2014-4-3 上午11:16:59
+ * @date
  */
 public class ScoreAnalyzeSecondAction extends ActionSupport {
 

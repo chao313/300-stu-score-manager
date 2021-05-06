@@ -15,7 +15,7 @@ import com.xscj.service.GradeSetUp;
 
 /**
  * @author xxx
- * @date 2014-4-14 下午8:37:01
+ * @date
  */
 public class ScoreCountAction extends ActionSupport {
 

@@ -30,7 +30,7 @@ import com.xscj.domain.StuScoreCount;
 
 /**
  * @author xxx
- * @date 2014-3-24 下午8:19:50
+ * @date
  */
 @Repository
 public class JdbcScoreDaoImpl implements ScoreDao {

@@ -14,7 +14,7 @@ import com.xscj.service.ScoreService;
 
 /**
  * @author xxx
- * @date 2014-4-3 下午7:44:03
+ * @date
  * 通过班级编号以及课程编号获得某个班级所有的学生考试成绩
  */
 public class ScoreQueryResultThirdAction extends ActionSupport {

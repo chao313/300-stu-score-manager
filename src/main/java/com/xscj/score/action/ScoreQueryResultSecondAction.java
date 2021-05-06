@@ -20,7 +20,7 @@ import com.xscj.service.StuService;
 
 /**
  * @author xxx
- * @date 2014-4-3 上午10:25:05
+ * @date
  * 获得填入的学生学号和选择的课程
  */
 public class ScoreQueryResultSecondAction extends ActionSupport {

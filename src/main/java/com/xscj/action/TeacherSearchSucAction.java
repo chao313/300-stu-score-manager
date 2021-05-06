@@ -12,7 +12,7 @@ import com.xscj.service.TeacherManager;
 
 /**
  * @author xxx
- * @date 2014-4-13 下午5:49:29
+ * @date
  */
 public class TeacherSearchSucAction extends ActionSupport {
 

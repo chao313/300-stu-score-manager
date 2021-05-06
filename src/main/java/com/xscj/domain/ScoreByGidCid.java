@@ -7,7 +7,7 @@ import java.io.Serializable;
 
 /**
  * @author xxx
- * @date 2014-4-3 下午7:51:06
+ * @date
  * 学生学号、学生姓名、考试时间、考试类型、学期、最后成绩
  */
 public class ScoreByGidCid implements Serializable {

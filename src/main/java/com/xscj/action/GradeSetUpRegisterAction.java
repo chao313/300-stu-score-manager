@@ -18,7 +18,7 @@ public class GradeSetUpRegisterAction extends ActionSupport {
 
     /**
      * @author xxx
-     * @date 2014-3-18 下午7:55:37
+     * @date
      */
     private static final long serialVersionUID = -4766023513573972878L;
 

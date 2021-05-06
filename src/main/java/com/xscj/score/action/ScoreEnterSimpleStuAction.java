@@ -20,7 +20,7 @@ import com.xscj.service.TeachingArrange;
 
 /**
  * @author xxx
- * @date 2014-4-7 上午6:57:32
+ * @date
  */
 public class ScoreEnterSimpleStuAction extends ActionSupport {
 

@@ -24,7 +24,7 @@ import com.xscj.util.Util;
 
 /**
  * @author xxx
- * @date 2014-3-19 下午5:44:02
+ * @date
  * <p>
  * 班级 课程 授课老师安排
  */

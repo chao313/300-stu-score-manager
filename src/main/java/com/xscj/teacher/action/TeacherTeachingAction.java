@@ -21,7 +21,7 @@ import com.xscj.service.TeachingArrange;
 
 /**
  * @author xxx
- * @date 2014-3-23 下午7:00:19
+ * @date
  */
 public class TeacherTeachingAction extends ActionSupport {
 

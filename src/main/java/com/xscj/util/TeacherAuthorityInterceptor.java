@@ -17,7 +17,7 @@ import java.util.Set;
 
 /**
  * @author xxx
- * @date 2014-4-18 下午11:10:39
+ * @date
  */
 public class TeacherAuthorityInterceptor extends AbstractInterceptor {
 

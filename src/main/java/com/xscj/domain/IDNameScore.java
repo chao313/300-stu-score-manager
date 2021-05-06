@@ -7,7 +7,7 @@ import java.io.Serializable;
 
 /**
  * @author xxx
- * @date 2014-4-10 上午9:26:13
+ * @date
  */
 public class IDNameScore implements Serializable {
 

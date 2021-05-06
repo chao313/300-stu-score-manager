@@ -12,7 +12,7 @@ import java.util.Vector;
  * </p>
  *
  * @author ccw
- * @date 2014-6-4
+ * @date
  */
 public class Serie implements Serializable {
     private static final long serialVersionUID = 1L;

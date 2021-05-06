@@ -23,13 +23,13 @@ public interface TeacherManager {
 
     /**
      * @author xxx 得到所有教师编号的业务逻辑处理
-     * @date 2014-3-18 下午7:26:44
+     * @date
      */
     public List<String> getAllTeacherBh();
 
     /**
      * @author xxx 得到所有教师的教师编号和教师姓名组合的集合
-     * @date 2014-3-19 下午6:21:49
+     * @date
      */
     public List<SubTeacher> getAllSubTeachers();
 
@@ -40,13 +40,13 @@ public interface TeacherManager {
 
     /**
      * @author xxx 得到有效的教师总人数
-     * @date 2014-3-21 下午3:35:09
+     * @date
      */
     public int getValidTeacherCount();
 
     /**
      * @author xxx
-     * @date 2014-3-21 下午3:42:11
+     * @date
      * 模拟删除操作 设置删除标志
      */
     public void deleteTeacherByBianHao(String bianHao);
@@ -54,14 +54,14 @@ public interface TeacherManager {
 
     /**
      * @author xxx
-     * @date 2014-3-23 下午7:38:41
+     * @date
      * 通过教师编号获从教师注册表中获取教师姓名
      */
     public String getTeacherNameByTeacherID(String teacherBianHao);
 
     /**
      * @author xxx
-     * @date 2014-4-13 下午12:30:31
+     * @date
      * @param教师编号
      * @return教师的基本个人信息
      */
@@ -70,7 +70,7 @@ public interface TeacherManager {
 
     /**
      * @author xxx
-     * @date 2014-4-13 下午3:53:06
+     * @date
      * @param教师对象
      * @return更新教师基本信息 *
      */
@@ -78,14 +78,14 @@ public interface TeacherManager {
 
     /**
      * @author xxx
-     * @date 2014-4-15 下午9:13:04
+     * @date
      * @return判断这个教师是否存在
      */
     public int isExisit(String teacherBianHao);
 
     /**
      * @author xxx
-     * @date 2014-4-18 下午9:28:17
+     * @date
      */
     public int isExisits(String gradeID, String password);
 

@@ -7,7 +7,7 @@ import java.io.Serializable;
 
 /**
  * @author xxx
- * @date 2014-3-19 下午5:47:27
+ * @date
  * 包含两个教师属性 教师编号 教师姓名
  */
 public class SubTeacher implements Serializable {

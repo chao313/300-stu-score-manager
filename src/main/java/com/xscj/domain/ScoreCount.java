@@ -7,7 +7,7 @@ import java.io.Serializable;
 
 /**
  * @author xxx
- * @date 2014-4-14 下午9:05:25
+ * @date
  */
 public class ScoreCount implements Serializable {
 

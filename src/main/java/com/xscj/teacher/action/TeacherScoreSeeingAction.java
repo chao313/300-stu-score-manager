@@ -20,7 +20,7 @@ import com.xscj.service.TeachingArrange;
 
 /**
  * @author xxx
- * @date 2014-4-6 下午3:42:59
+ * @date
  * 通过班级编号、课程编号、学期、考试类型
  * 查询某个班级某个学期某次考试某个课程的考试情况
  */

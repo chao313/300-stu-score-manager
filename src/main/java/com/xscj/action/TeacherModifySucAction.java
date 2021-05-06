@@ -14,7 +14,7 @@ import com.xscj.service.TeacherManager;
 
 /**
  * @author xxx
- * @date 2014-4-13 下午3:51:21
+ * @date
  */
 public class TeacherModifySucAction extends ActionSupport {
 

@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * @author xxx
- * @date 2014-3-19 下午5:54:18
+ * @date
  * <p>
  * 包含课程编号 课程名称 对应授课老师集合
  */

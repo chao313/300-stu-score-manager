@@ -31,7 +31,7 @@ import java.util.List;
 
 /**
  * @author xxx
- * @date 2014-4-6 下午4:38:52
+ * @date
  */
 public class ScoreAnalyzeFiveAction extends ActionSupport {
 

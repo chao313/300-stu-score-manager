@@ -17,7 +17,7 @@ import com.xscj.domain.StuScoreCount;
 public interface ScoreService {
     /**
      * @author xxx
-     * @date 2014-3-24 下午8:25:04
+     * @date
      * <p>
      * 批量插入学生成绩记录数据
      */
@@ -25,41 +25,41 @@ public interface ScoreService {
 
     /**
      * @author xxx
-     * @date 2014-4-1 下午1:23:02
+     * @date
      */
     public List<SimpleScore> getSimpleScores(String gradeID, String courseID, String examType, String examTime, int xueqi);
 
     /**
      * @author xxx
-     * @date 2014-4-2 上午10:48:57
+     * @date
      * 通过班级编号、学期、学生学号查询学生考试成绩
      */
     public List<ScorePart> getScoreParts(String gradeID, int xueqi, int stuXueHao);
 
     /**
      * @author xxx
-     * @date 2014-4-3 上午7:55:39
+     * @date
      * 通过学生学号查询学生考试成绩
      */
     public List<ScorePart> getScorePartsByXueHao(int stuXueHao);
 
     /**
      * @author xxx
-     * @date 2014-4-3 上午10:14:10
+     * @date
      * 通过学生学号和课程编号查询这个学生截止目前为止某一门课程所有考试情况
      */
     public List<ScoreXueqi> getScoreXueqis(int stuXueHao, String courseID);
 
     /**
      * @author xxx
-     * @date 2014-4-3 下午7:55:55
+     * @date
      * 通过班级编号和课程编号查询某个班级所有学生某门课程的所有成绩记录
      */
     public List<ScoreByGidCid> getScoreByGidCids(String gradeID, String courseID);
 
     /**
      * @author xxx
-     * @date 2014-4-6 下午12:36:01
+     * @date
      * @param学号
      * @param学期
      * @param类型
@@ -69,7 +69,7 @@ public interface ScoreService {
 
     /**
      * @author xxx
-     * @date 2014-4-6 下午4:06:00
+     * @date
      * @param班级编号
      * @param课程编号
      * @param学期
@@ -80,7 +80,7 @@ public interface ScoreService {
 
     /**
      * @author xxx
-     * @date 2014-4-9 下午9:29:34
+     * @date
      * @param学生学号
      * @param学期
      * @param考试类型
@@ -90,7 +90,7 @@ public interface ScoreService {
 
     /**
      * @author xxx
-     * @date 2014-4-9 下午11:05:18
+     * @date
      * @param新的考试成绩
      * @param学生学号
      * @param学期
@@ -102,20 +102,20 @@ public interface ScoreService {
 
     /**
      * @author xxx
-     * @date 2014-4-10 上午9:36:02
+     * @date
      * @return学生学号、学生姓名、学生成绩
      */
     public List<IDNameScore> getIdNameScores(String gradeID, int xueqi, String examType, String courseID);
 
     /**
      * @author xxx
-     * @date 2014-4-10 下午1:45:55
+     * @date
      */
     public void updateScores(List<Integer> stuXueHaos, List<Double> scores, String gradeID, int xueqi, String examType, String courseID);
 
     /**
      * @author xxx
-     * @date 2014-4-14 上午9:27:06
+     * @date
      * @param学生学号
      * @param学期
      * @param考试类型
@@ -126,7 +126,7 @@ public interface ScoreService {
 
     /**
      * @author xxx
-     * @date 2014-4-14 上午10:34:56
+     * @date
      * @param学生学号
      * @param学期
      * @param考试类型
@@ -138,7 +138,7 @@ public interface ScoreService {
 
     /**
      * @author xxx
-     * @date 2014-4-14 下午9:16:06
+     * @date
      * @param班级编号
      * @param学期
      * @param考试类型
@@ -148,65 +148,65 @@ public interface ScoreService {
 
     /**
      * @author xxx
-     * @date 2014-4-16 下午8:38:39
+     * @date
      * @return获得某个班级某个学期某次考试某个学生的考试成绩记录总数
      */
     public int getCount(int stuXueHao, int xueqi, String examType);
 
     /**
      * @author xxx
-     * @date 2014-4-16 下午9:09:01
+     * @date
      */
     public int getCount(String gradeID, int xueqi, String examType, String courseID);
 
     /**
      * @author xxx
-     * @date 2014-4-16 下午10:26:10
+     * @date
      * @return是否有某个学生的成绩记录
      */
     public int hasScoreRecord(int stuXueHao);
 
     /**
      * @author xxx
-     * @date 2014-4-16 下午10:26:10
+     * @date
      * @return是否有某个学生某门课程的成绩记录
      */
     public int hasScoreRecord(int stuXueHao, String courseID);
 
     /**
      * @author xxx
-     * @date 2014-4-16 下午11:20:42
+     * @date
      */
     public int hasScoreRecord(int stuXueHao, String examType, int xueqi);
 
     /**
      * @author xxx
-     * @date 2014-4-16 下午11:42:35
+     * @date
      */
     public int hasScoreRecord(String gradeID, String courseID);
 
     /**
      * @author xxx
-     * @date 2014-4-17 上午8:14:47
+     * @date
      */
     public int hasScoreRecord(String gradeID, String courseID, int xueqi, String examTypeString);
 
     /**
      * @author xxx
-     * @date 2014-4-17 上午8:40:08
+     * @date
      */
     public int hasScoreRecord(int stuXueHao, String courseID, int xueqi, String examType);
 
 
     /**
      * @author xxx
-     * @date 2014-4-17 上午9:21:31
+     * @date
      */
     public int isExisits(String gradeID, int xueqi, String examType);
 
     /**
      * @author xxx
-     * @date 2014-4-17 上午10:07:31
+     * @date
      * @return获得班级每个同学的总分集合
      */
     public List<StuScoreCount> getStuScoreCounts(String gradeID, int xueqi, String examType);

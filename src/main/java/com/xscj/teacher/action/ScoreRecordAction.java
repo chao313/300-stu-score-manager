@@ -16,7 +16,7 @@ import com.xscj.service.StuService;
 
 /**
  * @author xxx
- * @date 2014-3-24 上午10:08:12
+ * @date
  */
 public class ScoreRecordAction extends ActionSupport {
 

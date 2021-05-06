@@ -6,7 +6,7 @@ public class ScorePart implements Serializable {
 
     /**
      * @author xxx
-     * @date 2014-4-2 上午10:39:50
+     * @date
      * 课程编号、课程名、考试时间、考试类型、成绩
      */
     private static final long serialVersionUID = -7126711531588602335L;

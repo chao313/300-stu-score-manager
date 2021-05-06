@@ -19,7 +19,7 @@ import com.xscj.service.StuService;
 
 /**
  * @author xxx
- * @date 2014-4-7 上午9:00:45
+ * @date
  */
 public class ScoreEnterSimpleStuSucAction extends ActionSupport {
 

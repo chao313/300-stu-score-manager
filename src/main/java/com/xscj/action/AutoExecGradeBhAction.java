@@ -16,7 +16,7 @@ import com.xscj.service.CategoryService;
 
 /**
  * @author xxx
- * @date 2014-3-18 下午7:03:22
+ * @date
  */
 public class AutoExecGradeBhAction extends ActionSupport {
 

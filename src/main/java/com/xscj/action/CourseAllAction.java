@@ -14,7 +14,7 @@ import com.xscj.service.CoursePlan;
 
 /**
  * @author xxx
- * @date 2014-4-16 上午5:51:05
+ * @date
  */
 public class CourseAllAction extends ActionSupport {
 

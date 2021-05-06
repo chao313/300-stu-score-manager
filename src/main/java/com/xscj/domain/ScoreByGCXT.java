@@ -7,7 +7,7 @@ import java.io.Serializable;
 
 /**
  * @author xxx
- * @date 2014-4-6 下午4:01:06
+ * @date
  * 学号、姓名、考试时间、最后成绩
  */
 public class ScoreByGCXT implements Serializable {

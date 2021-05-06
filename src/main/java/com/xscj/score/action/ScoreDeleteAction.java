@@ -16,7 +16,7 @@ import com.xscj.service.GradeSetUp;
 
 /**
  * @author xxx
- * @date 2014-4-10 下午4:08:58
+ * @date
  */
 public class ScoreDeleteAction extends ActionSupport {
 
