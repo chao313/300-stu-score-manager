@@ -3,15 +3,11 @@
  */
 package com.xscj.score.action;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.InputStream;
-import java.util.List;
-
-import org.apache.struts2.ServletActionContext;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-
+import com.itextpdf.text.*;
+import com.itextpdf.text.pdf.BaseFont;
+import com.itextpdf.text.pdf.PdfPCell;
+import com.itextpdf.text.pdf.PdfPTable;
+import com.itextpdf.text.pdf.PdfWriter;
 import com.opensymphony.xwork2.ActionSupport;
 import com.xscj.domain.Grade;
 import com.xscj.domain.ScoreBySXT;
@@ -20,17 +16,13 @@ import com.xscj.service.GradeSetUp;
 import com.xscj.service.ScoreService;
 import com.xscj.service.StuService;
 import com.xscj.util.Util;
-import com.itextpdf.text.BaseColor;
-import com.itextpdf.text.Chunk;
-import com.itextpdf.text.Document;
-import com.itextpdf.text.Element;
-import com.itextpdf.text.Font;
-import com.itextpdf.text.Image;
-import com.itextpdf.text.Paragraph;
-import com.itextpdf.text.pdf.BaseFont;
-import com.itextpdf.text.pdf.PdfPCell;
-import com.itextpdf.text.pdf.PdfPTable;
-import com.itextpdf.text.pdf.PdfWriter;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.InputStream;
+import java.util.List;
 
 
 /**
@@ -80,7 +72,7 @@ public class ScorePrinterSucAction extends ActionSupport {
         Paragraph logoText = new Paragraph();
         logoText.setFont(FontChinese);
         //Chunk logo = new Chunk(Image.getInstance(ServletActionContext.getServletContext().getRealPath("/")+"logo.png"),0,-15);
-        Chunk logo = new Chunk(Image.getInstance(Util.LOGO_FILE_PATH+ "logo.png"), 0, -15);
+        Chunk logo = new Chunk(Image.getInstance(Util.getPath() + "/logo.png"), 0, -15);
         logoText.add(logo);
         logoText.add("XXX工作室");
         document.add(logoText);

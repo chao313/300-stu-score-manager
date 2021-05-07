@@ -1,18 +1,30 @@
 package com.xscj.util;
 
+import org.springframework.util.ResourceUtils;
+
 import java.awt.*;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 
 public class Util {
-    public static final String FONT_FILE_PATH = "/var/lib/openshift/582302b189f5cf7463000038/app-root/repo/src/main/resources/simhei.ttf";//字体文件路径
     public static final String LOGO_FILE_PATH = "/var/lib/openshift/582302b189f5cf7463000038/app-root/repo/src/main/resources/";
     public static Font nf = null;
 
+    public static String getPath() {
+        File file = null;
+        try {
+            file = ResourceUtils.getFile("classpath:/");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        return file.getAbsolutePath();
+    }
+
     static {
         if (nf == null) {
-            File file = new File(FONT_FILE_PATH);
             try {
+                File file = ResourceUtils.getFile("classpath:simhei.ttf");
                 FileInputStream fi = new FileInputStream(file);
                 nf = Font.createFont(Font.TRUETYPE_FONT, fi);
                 fi.close();

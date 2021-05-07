@@ -3,12 +3,11 @@
  */
 package com.xscj.score.action;
 
-import java.awt.Font;
-import java.awt.geom.Rectangle2D;
-import java.io.File;
-import java.io.FileInputStream;
-import java.util.List;
-
+import com.opensymphony.xwork2.ActionSupport;
+import com.xscj.domain.Grade;
+import com.xscj.domain.StuScoreCount;
+import com.xscj.service.GradeSetUp;
+import com.xscj.service.ScoreService;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.JFreeChart;
 import org.jfree.chart.axis.CategoryAxis;
@@ -24,19 +23,20 @@ import org.jfree.chart.title.TextTitle;
 import org.jfree.data.category.DefaultCategoryDataset;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.util.ResourceUtils;
 
-import com.opensymphony.xwork2.ActionSupport;
-import com.xscj.domain.Grade;
-import com.xscj.domain.StuScoreCount;
-import com.xscj.service.GradeSetUp;
-import com.xscj.service.ScoreService;
+import java.awt.*;
+import java.awt.geom.Rectangle2D;
+import java.io.File;
+import java.io.FileInputStream;
+import java.util.List;
 
 /**
  * @author xxx
- * @date
- * <p>
+ * @date <p>
  * 对某个学生的所有成绩进行整体分析
  */
+
 public class ScoreCountAnalyzeAction extends ActionSupport {
 
     /**
@@ -63,15 +63,15 @@ public class ScoreCountAnalyzeAction extends ActionSupport {
 
     @SuppressWarnings("deprecation")
     public JFreeChart getChart() {
-        File file = new File("/var/lib/openshift/582302b189f5cf7463000038/app-root/repo/src/main/resources/simhei.ttf");
         Font nf = null;
         try {
+            File file = ResourceUtils.getFile("classpath:simhei.ttf");
             FileInputStream fi = new FileInputStream(file);
             nf = Font.createFont(Font.TRUETYPE_FONT, fi);
             fi.close();
             nf = nf.deriveFont(Font.PLAIN, 18);
         } catch (Exception e) {
-
+            e.printStackTrace();
         }
 
         chart = ChartFactory.createLineChart(grade.getYear() + "届（" + grade.getClassID() + "）班第" + xueqi + "学期" + examType + "考试成绩总分统计排名", "学生排名", "总分", getDataSet(), PlotOrientation.VERTICAL, true, false, false);

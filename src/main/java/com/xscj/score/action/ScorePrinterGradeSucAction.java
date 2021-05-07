@@ -5,6 +5,21 @@ package com.xscj.score.action;
 
 /*import java.awt.geom.Rectangle2D;*/
 
+import com.itextpdf.text.*;
+import com.itextpdf.text.pdf.BaseFont;
+import com.itextpdf.text.pdf.PdfPCell;
+import com.itextpdf.text.pdf.PdfPTable;
+import com.itextpdf.text.pdf.PdfWriter;
+import com.opensymphony.xwork2.ActionSupport;
+import com.xscj.domain.*;
+import com.xscj.service.GradeSetUp;
+import com.xscj.service.ScoreService;
+import com.xscj.service.TeachingArrange;
+import com.xscj.util.Util;
+import com.xscj.util.XscjComparator;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
@@ -13,8 +28,6 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-import com.xscj.util.Util;
-import org.apache.struts2.ServletActionContext;
 /*import org.jfree.chart.ChartFactory;
 import org.jfree.chart.JFreeChart;
 import org.jfree.chart.axis.CategoryAxis;
@@ -29,31 +42,7 @@ import org.jfree.chart.servlet.ServletUtilities;
 import org.jfree.chart.title.LegendTitle;
 import org.jfree.chart.title.TextTitle;
 import org.jfree.data.category.DefaultCategoryDataset;*/
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-
-import com.opensymphony.xwork2.ActionSupport;
-import com.xscj.domain.Course;
-import com.xscj.domain.Grade;
-import com.xscj.domain.ScoreCount;
-import com.xscj.domain.ScoreSmall;
-import com.xscj.domain.ScoreTotal;
 /*import com.xscj.domain.StuScoreCount;*/
-import com.xscj.service.GradeSetUp;
-import com.xscj.service.ScoreService;
-import com.xscj.service.TeachingArrange;
-import com.xscj.util.XscjComparator;
-import com.itextpdf.text.BaseColor;
-import com.itextpdf.text.Chunk;
-import com.itextpdf.text.Document;
-import com.itextpdf.text.Element;
-import com.itextpdf.text.Font;
-import com.itextpdf.text.Image;
-import com.itextpdf.text.Paragraph;
-import com.itextpdf.text.pdf.BaseFont;
-import com.itextpdf.text.pdf.PdfPCell;
-import com.itextpdf.text.pdf.PdfPTable;
-import com.itextpdf.text.pdf.PdfWriter;
 
 /**
  * @author xxx
@@ -172,7 +161,7 @@ public class ScorePrinterGradeSucAction extends ActionSupport {
         Paragraph logoText = new Paragraph();
         logoText.setFont(FontChinese);
         //Chunk logo = new Chunk(Image.getInstance(ServletActionContext.getServletContext().getRealPath("/")+"logo.png"),0,-15);
-        Chunk logo = new Chunk(Image.getInstance(Util.LOGO_FILE_PATH + "logo.png"), 0, -15);
+        Chunk logo = new Chunk(Image.getInstance(Util.getPath() + "/logo.png"), 0, -15);
 
         logoText.add(logo);
         logoText.add("XXX工作室");
@@ -186,10 +175,10 @@ public class ScorePrinterGradeSucAction extends ActionSupport {
         document.add(p);
 
         PdfPTable table = new PdfPTable(2 + courses.size());
-		/*
-		 * PdfPCell cell = new PdfPCell(new Paragraph("学号",FontChinese));
-		 * cell.setBackgroundColor(BaseColor.CYAN); table.addCell(cell);
-		 */
+        /*
+         * PdfPCell cell = new PdfPCell(new Paragraph("学号",FontChinese));
+         * cell.setBackgroundColor(BaseColor.CYAN); table.addCell(cell);
+         */
 
         PdfPCell cell = new PdfPCell(new Paragraph("姓名", FontChinese));
         cell.setBackgroundColor(BaseColor.CYAN);
@@ -205,11 +194,11 @@ public class ScorePrinterGradeSucAction extends ActionSupport {
         cell.setBackgroundColor(BaseColor.CYAN);
         table.addCell(cell);
         for (int i = 0; i < scoreTotals.size(); i++) {
-			/*
-			 * cell = new PdfPCell(new
-			 * Paragraph(scoreTotals.get(i).getXuehao()+""));
-			 * table.addCell(cell);
-			 */
+            /*
+             * cell = new PdfPCell(new
+             * Paragraph(scoreTotals.get(i).getXuehao()+""));
+             * table.addCell(cell);
+             */
             cell = new PdfPCell(new Paragraph(scoreTotals.get(i).getName(),
                     FontChinese));
             table.addCell(cell);
