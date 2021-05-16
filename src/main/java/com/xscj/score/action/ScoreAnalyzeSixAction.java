@@ -75,7 +75,7 @@ public class ScoreAnalyzeSixAction extends ActionSupport {
         renderer.setBaseItemLabelGenerator(new StandardCategoryItemLabelGenerator());
         LineAndShapeRenderer lineAndShapeRenderer = (LineAndShapeRenderer) plot.getRenderer();
         lineAndShapeRenderer.setShapesVisible(true);
-        lineAndShapeRenderer.setShape(new Ellipse2D.Double(-2, -2, 4, 4));
+        lineAndShapeRenderer.setShape(new Ellipse2D.Double(-2, -2, 5, 5));
         CategoryAxis categoryAxis = plot.getDomainAxis();
         categoryAxis.setLabelFont(nf);
         categoryAxis.setCategoryLabelPositions(CategoryLabelPositions.UP_45);
@@ -88,7 +88,9 @@ public class ScoreAnalyzeSixAction extends ActionSupport {
     private DefaultCategoryDataset getDataSet() {
         DefaultCategoryDataset dataset = new DefaultCategoryDataset();
         for (int i = 0; i < scoreByGidCids.size(); i++) {
-            dataset.addValue(scoreByGidCids.get(i).getScore(), scoreByGidCids.get(i).getExamTime(), scoreByGidCids.get(i).getStuName());
+            dataset.addValue(scoreByGidCids.get(i).getScore(), scoreByGidCids.get(i).getExamTime().replaceAll("-", ""), scoreByGidCids.get(i).getStuName());
+            dataset.addValue(new Double("500"), "二本线", scoreByGidCids.get(i).getStuName());
+            dataset.addValue(new Double("411"), "一科线", scoreByGidCids.get(i).getStuName());
         }
         return dataset;
     }

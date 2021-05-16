@@ -256,11 +256,11 @@ public class EchartsDao {
      * @return
      */
     public List<List<Object>> EchartsPersonSelfTotalCourse(String stuid) {
-        String sqlString = " select  CONCAT(classes.cs_date,'年',record.sr_examtype) as className ,  ROUND(sum(sr_score),2) as score  " +
+        String sqlString = " select  CONCAT(classes.cs_date,'年',record.sr_examtime) as className ,  ROUND(sum(sr_score),2) as score  " +
                 "    from sp_score_record record JOIN sp_course course ON course.c_id = record.sr_courseid   " +
                 "    JOIN sp_classes classes ON classes.cs_id = record.sr_gradeid  " +
                 "    JOIN sp_student stu ON record.sr_stuid = stu.s_id  " +
-                "    where  stu.s_id =  ? group by classes.cs_date,record.sr_examtype ";
+                "    where  stu.s_id =  ? group by classes.cs_date,record.sr_examtime ";
         Object[] argsObjects = {stuid};
         final List<List<Object>> result = new ArrayList<List<Object>>();
         jdbcTemplate.query(sqlString, argsObjects, new RowCallbackHandler() {
