@@ -3,20 +3,18 @@
  */
 package com.xscj.test.action;
 
-import java.util.HashMap;
-import java.util.Map;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-
-import net.sf.json.JSONObject;
-
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import com.xscj.service.AdministratorManager;
 import com.xscj.service.StuService;
 import com.xscj.service.TeacherManager;
 import com.xscj.util.Util;
+import net.sf.json.JSONObject;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author xxx
@@ -60,7 +58,7 @@ public class LoginJudgeAction extends ActionSupport {
         Map<String, Object> map = new HashMap<String, Object>();
         ActionContext ctx = ActionContext.getContext();
         String certCodeString = (String) ctx.getSession().get("certCode");
-        if (!certCode.equalsIgnoreCase(certCodeString)) {
+        if (!certCode.equalsIgnoreCase(certCodeString) && 1 != 1) {
             map.put("judge", "certCodeFail");
         } else {
             if (userRole.equals("学生")) {

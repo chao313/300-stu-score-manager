@@ -3,30 +3,19 @@
  */
 package com.xscj.dao.impl;
 
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
-
+import com.xscj.dao.ScoreDao;
+import com.xscj.domain.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BatchPreparedStatementSetter;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowCallbackHandler;
 import org.springframework.stereotype.Repository;
 
-import com.xscj.dao.ScoreDao;
-import com.xscj.domain.IDNameScore;
-import com.xscj.domain.Score;
-import com.xscj.domain.ScoreByGCXT;
-import com.xscj.domain.ScoreByGidCid;
-import com.xscj.domain.ScoreBySXT;
-import com.xscj.domain.ScoreCount;
-import com.xscj.domain.ScoreGroup;
-import com.xscj.domain.ScorePart;
-import com.xscj.domain.ScoreXueqi;
-import com.xscj.domain.SimpleScore;
-import com.xscj.domain.StuScoreCount;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author xxx
@@ -149,8 +138,30 @@ public class JdbcScoreDaoImpl implements ScoreDao {
 
     @Override
     public List<ScoreByGidCid> getScoreByGidCids(String gradeID, String courseID) {
-        String sqlString = "SELECT sr_stuid, s_name, sr_examtime, sr_examtype, sr_xueqi, sr_score FROM sp_score_record, sp_student WHERE sr_gradeid = ? AND sr_courseid = ? AND sp_student.s_id = sp_score_record.sr_stuid;";
+        String sqlString = "SELECT sr_stuid, s_name, sr_examtime, sr_examtype, sr_xueqi, sr_score FROM sp_score_record, sp_student WHERE sr_gradeid = ? AND sr_courseid = ? AND sp_student.s_id = sp_score_record.sr_stuid order by CONVERT(sr_score,decimal(9,4)) DESC;";
         Object[] argsObjects = {gradeID, courseID};
+        final List<ScoreByGidCid> scoreByGidCids = new ArrayList<ScoreByGidCid>();
+        jdbcTemplate.query(sqlString, argsObjects, new RowCallbackHandler() {
+
+            @Override
+            public void processRow(ResultSet rs) throws SQLException {
+                ScoreByGidCid scoreByGidCid = new ScoreByGidCid();
+                scoreByGidCid.setStuXueHao(rs.getInt("sr_stuid"));
+                scoreByGidCid.setStuName(rs.getString("s_name"));
+                scoreByGidCid.setExamTime(rs.getString("sr_examtime"));
+                scoreByGidCid.setExamType(rs.getString("sr_examtype"));
+                scoreByGidCid.setXueqi(rs.getInt("sr_xueqi"));
+                scoreByGidCid.setScore(rs.getDouble("sr_score"));
+                scoreByGidCids.add(scoreByGidCid);
+            }
+        });
+        return scoreByGidCids;
+    }
+
+    @Override
+    public List<ScoreByGidCid> getScoreByGid(String gradeID) {
+        String sqlString = "SELECT sr_stuid, s_name, sr_examtime, sr_examtype, sr_xueqi, sum(sr_score) as sr_score FROM sp_score_record, sp_student WHERE sr_gradeid = ?  AND sp_student.s_id = sp_score_record.sr_stuid group by sr_stuid, s_name, sr_examtime, sr_examtype, sr_xueqi order by CONVERT(sum( sr_score ) ,decimal(9,4)) DESC;";
+        Object[] argsObjects = {gradeID};
         final List<ScoreByGidCid> scoreByGidCids = new ArrayList<ScoreByGidCid>();
         jdbcTemplate.query(sqlString, argsObjects, new RowCallbackHandler() {
 

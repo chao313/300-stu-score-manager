@@ -1,10 +1,11 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8" %>
+<%@ page language="java" pageEncoding="UTF-8" %>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
     <title>XXX工作室</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet"><link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/ui-lightness/jquery-ui-1.10.4.custom.css"
           rel="stylesheet">
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/jquery-ui-1.10.4.custom.js"></script>
@@ -36,6 +37,7 @@
                 }
             });
         }
+
         $(function () {
             $("#accordion").accordion();
             saveScore();
@@ -110,7 +112,7 @@
             <input type="hidden" name="examType" value='<s:property value="examType" />'>
             <table class="datalist table">
                 <tr>
-                    <th colspan="3" align="left"> 考试时间 ：<input type="text" name="examTime"
+                    <th colspan="3" align="left"> 考试时间 ：<input type="text" name="examTime" style="color:black"
                                                                value='<s:property value="currentDate" />'/></th>
                 </tr>
                 <tr>

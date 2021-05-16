@@ -59,6 +59,11 @@ public class ScoreServiceImpl implements ScoreService {
     }
 
     @Override
+    public List<ScoreByGidCid> getScoreByGid(String gradeID) {
+        return scoreDao.getScoreByGid(gradeID);
+    }
+
+    @Override
     public List<ScoreBySXT> getScoreBySXTs(int stuXueHao, int xueqi,
                                            String examType) {
         return scoreDao.getScoreBySXTs(stuXueHao, xueqi, examType);

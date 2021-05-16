@@ -106,7 +106,11 @@
     <bean id="ScoreQueryResultThirdAction" class="com.xscj.score.action.ScoreQueryResultThirdAction"
           scope="prototype"></bean>
 
+    <bean id="ScoreQueryResultSixAction" class="com.xscj.score.action.ScoreQueryResultSixAction"
+          scope="prototype"></bean>
+
     <bean id="ScoreAnalyzeThirdAction" class="com.xscj.score.action.ScoreAnalyzeThirdAction" scope="prototype"></bean>
+    <bean id="ScoreAnalyzeSixAction" class="com.xscj.score.action.ScoreAnalyzeSixAction" scope="prototype"></bean>
 
     <bean id="ScoreAnalyzeFiveAction" class="com.xscj.score.action.ScoreAnalyzeFiveAction" scope="prototype"></bean>
     <bean id="ScoreQueryResultFourAction" class="com.xscj.score.action.ScoreQueryResultFourAction"
@@ -165,6 +169,21 @@
     <bean id="StuSearchTestAction" class="com.xscj.test.action.StuSearchTestAction" scope="prototype"></bean>
 
     <bean id="StuSearchGradeTestAction" class="com.xscj.test.action.StuSearchGradeTestAction" scope="prototype"></bean>
+
+    <bean id="EchartsAction" class="com.xscj.echarts.EchartsAction" scope="prototype"></bean>
+
+    <bean id="EchartsYearCourseAvgAction" class="com.xscj.echarts.EchartsYearCourseAvgAction" scope="prototype"></bean>
+    <bean id="EchartsYearCourseMaxAction" class="com.xscj.echarts.EchartsYearCourseMaxAction" scope="prototype"></bean>
+    <bean id="EchartsYearCourseMinAction" class="com.xscj.echarts.EchartsYearCourseMinAction" scope="prototype"></bean>
+    <bean id="EchartsYearCourseGradeAction" class="com.xscj.echarts.EchartsYearCourseGradeAction" scope="prototype"></bean>
+    <bean id="EchartsPersonYearCoursAction" class="com.xscj.echarts.EchartsPersonYearCoursAction" scope="prototype"></bean>
+    <bean id="EchartsPersonTotalYearGradeAction" class="com.xscj.echarts.EchartsPersonTotalYearGradeAction" scope="prototype"></bean>
+    <bean id="EchartsPersonTotalYearAction" class="com.xscj.echarts.EchartsPersonTotalYearAction" scope="prototype"></bean>
+    <bean id="EchartsPersonSelfCourseAction" class="com.xscj.echarts.EchartsPersonSelfCourseAction" scope="prototype"></bean>
+    <bean id="EchartsPersonSelfCourseTotalAction" class="com.xscj.echarts.EchartsPersonSelfCourseTotalAction" scope="prototype"></bean>
+    <bean id="EchartsGradeSelfCourseAction" class="com.xscj.echarts.EchartsGradeSelfCourseAction" scope="prototype"></bean>
+    <bean id="EchartsGradeSelfLineCourseAction" class="com.xscj.echarts.EchartsGradeSelfLineCourseAction" scope="prototype"></bean>
+
 
     <bean id="TeacherSearchTestAction" class="com.xscj.test.action.TeacherSearchTestAction" scope="prototype"></bean>
 
@@ -237,22 +256,23 @@
     <!--p:username="root"-->
     <!--p:password="root"-->
     <!--&gt;</bean>-->
-    <!--<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init"-->
-    <!--destroy-method="close"-->
-    <!--p:driverClassName="com.mysql.jdbc.Driver"-->
-    <!--p:url="jdbc:mysql://127.0.0.1:3306/300-stu-score-manager?useUnicode=true&amp;characterEncoding=UTF-8"-->
-    <!--p:username="root"-->
-    <!--p:password="123456"-->
-    <!--&gt;</bean>-->
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init"
           destroy-method="close"
           p:driverClassName="com.mysql.jdbc.Driver"
-          p:url="jdbc:mysql://39.107.236.187:7001/stu_score_manager?useUnicode=true&amp;characterEncoding=UTF-8"
+          p:url="jdbc:mysql://127.0.0.1:3306/300-stu-score-manager?useUnicode=true&amp;characterEncoding=UTF-8"
           p:username="root"
           p:password="123456"
     ></bean>
+    <!--<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init"-->
+    <!--destroy-method="close"-->
+    <!--p:driverClassName="com.mysql.jdbc.Driver"-->
+    <!--p:url="jdbc:mysql://39.107.236.187:7001/stu_score_manager?useUnicode=true&amp;characterEncoding=UTF-8"-->
+    <!--p:username="root"-->
+    <!--p:password="123456"-->
+    <!--&gt;</bean>-->
     <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate" p:dataSource-ref="dataSource"></bean>
 
     <context:component-scan base-package="com.xscj.dao"></context:component-scan>
     <context:component-scan base-package="com.xscj.service"></context:component-scan>
+    <context:component-scan base-package="com.xscj.echarts.dao"></context:component-scan>
 </beans>

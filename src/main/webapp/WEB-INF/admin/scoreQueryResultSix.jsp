@@ -69,7 +69,7 @@
     <div align="center">
         <table class="datalist table">
             <img alt=""
-                 src='scoreAnalyzeThird.action?gradeID=<s:property value="gradeID" />&courseID=<s:property value="courseID" />'
+                 src='scoreAnalyzeSixAction.action?gradeID=<s:property value="gradeID" />&courseID=<s:property value="courseID" />'
                  width="1000" height="500">
             <hr>
 

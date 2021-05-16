@@ -1,24 +1,13 @@
 package com.xscj.service;
 
-import java.util.List;
+import com.xscj.domain.*;
 
-import com.xscj.domain.IDNameScore;
-import com.xscj.domain.Score;
-import com.xscj.domain.ScoreByGCXT;
-import com.xscj.domain.ScoreByGidCid;
-import com.xscj.domain.ScoreBySXT;
-import com.xscj.domain.ScoreCount;
-import com.xscj.domain.ScoreGroup;
-import com.xscj.domain.ScorePart;
-import com.xscj.domain.ScoreXueqi;
-import com.xscj.domain.SimpleScore;
-import com.xscj.domain.StuScoreCount;
+import java.util.List;
 
 public interface ScoreService {
     /**
      * @author xxx
-     * @date
-     * <p>
+     * @date <p>
      * 批量插入学生成绩记录数据
      */
     public void addScoresToDb(final List<Score> scores);
@@ -31,31 +20,33 @@ public interface ScoreService {
 
     /**
      * @author xxx
-     * @date
-     * 通过班级编号、学期、学生学号查询学生考试成绩
+     * @date 通过班级编号、学期、学生学号查询学生考试成绩
      */
     public List<ScorePart> getScoreParts(String gradeID, int xueqi, int stuXueHao);
 
     /**
      * @author xxx
-     * @date
-     * 通过学生学号查询学生考试成绩
+     * @date 通过学生学号查询学生考试成绩
      */
     public List<ScorePart> getScorePartsByXueHao(int stuXueHao);
 
     /**
      * @author xxx
-     * @date
-     * 通过学生学号和课程编号查询这个学生截止目前为止某一门课程所有考试情况
+     * @date 通过学生学号和课程编号查询这个学生截止目前为止某一门课程所有考试情况
      */
     public List<ScoreXueqi> getScoreXueqis(int stuXueHao, String courseID);
 
     /**
      * @author xxx
-     * @date
-     * 通过班级编号和课程编号查询某个班级所有学生某门课程的所有成绩记录
+     * @date 通过班级编号和课程编号查询某个班级所有学生某门课程的所有成绩记录
      */
     public List<ScoreByGidCid> getScoreByGidCids(String gradeID, String courseID);
+
+    /**
+     * @author xxx
+     * @date 通过班级编号和课程编号查询某个班级所有学生全部课程的所有成绩综总和记录
+     */
+    public List<ScoreByGidCid> getScoreByGid(String gradeID);
 
     /**
      * @author xxx

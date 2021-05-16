@@ -17,7 +17,7 @@ import java.util.List;
  * @author xxx
  * @date 通过班级编号以及课程编号获得某个班级所有的学生考试成绩
  */
-public class ScoreQueryResultThirdAction extends ActionSupport {
+public class ScoreQueryResultSixAction extends ActionSupport {
 
     /**
      *
@@ -57,7 +57,7 @@ public class ScoreQueryResultThirdAction extends ActionSupport {
     @Override
     public void validate() {
         /*scoreByGidCids = scoreService.getScoreByGidCids(gradeID, courseID);*/
-        scoreByGidCids = scoreService.getScoreByGidCids(gradeID, courseID);
+        scoreByGidCids = scoreService.getScoreByGid(gradeID);
         this.complate();
     }
 

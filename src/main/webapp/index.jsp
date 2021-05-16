@@ -162,9 +162,9 @@
             <tr>
                 <th>角&nbsp;&nbsp;&nbsp;&nbsp;色：</th>
                 <td colspan="2">
-                    <input type="radio" name="userRole" value="学生" checked="checked">学生
+                    <input type="radio" name="userRole" value="学生">学生
                     <input type="radio" name="userRole" value="教师">教师
-                    <input type="radio" name="userRole" value="管理员">管理员
+                    <input type="radio" name="userRole" value="管理员" checked="checked">管理员
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <input
